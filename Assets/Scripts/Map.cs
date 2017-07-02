@@ -8,6 +8,8 @@ public class Map : MonoBehaviour1 {
 	/**Fields**/
 	Tile[] tempTiles;
 	Tile[,] tiles;
+	public Material grassMat;
+	public Material waterMat;
 	
 	void Awake() {
 		tempTiles = this.GetComponentsInChildren<Tile>();
@@ -26,9 +28,7 @@ public class Map : MonoBehaviour1 {
 	{
 		return tiles[x,y];
 	}
-	
-	
-	
+			
 	/** Uses 1d array of tiles to create the 2d array. Used in Start() **/
 	Tile[,] createMap(Tile[] temp) {
 		
@@ -45,6 +45,7 @@ public class Map : MonoBehaviour1 {
 		
 		foreach(Tile t in temp) {
 			tileArray[t.getX(),t.getY()]=t;
+			t.DetermineTileType();
 		}
 		
 		return tileArray;

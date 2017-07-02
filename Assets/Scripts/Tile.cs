@@ -9,13 +9,13 @@ public class Tile : MonoBehaviour1 {
 	private int y;
 	//private Unit containedUnit;
 	//private Building containedBuilding;
-	//private Map currentMap;
+	private Map currentMap;
 	private TileType type;
 	
 	/**End of fields**/
 	
 	void Awake() {
-	//	this.setMap(this.GetComponentInParent<Map>());
+		this.setMap(this.GetComponentInParent<Map>());
 	
 		//Sets x and y based on position on the map, assumes map starts at (0,0)
 		setX((int)this.gameObject.transform.position.x);
@@ -40,6 +40,27 @@ public class Tile : MonoBehaviour1 {
 			containedUnit.OnClick();
 		else if (containedBuilding)
 			containedBuilding.OnClick();
+		*/
+	}
+	
+	//Add all tile types to Determine Tile Type (as well as to the public variables (type)Material
+	public void DetermineTileType()
+	{
+		Material tileMat = GetComponent<Renderer>().material;
+		if(tileMat==currentMap.grassMat)
+		{
+			this.setType(Tile.TileType.Grass);
+		}
+		if(tileMat==currentMap.waterMat)
+		{
+			this.setType(Tile.TileType.Water);
+		}
+		/*
+		//It is important that contaiendBuilding is last, as to overwrite grass/what's underneath (regardless of material)
+		if(containedBuilding)
+		{
+			this.setType(Tile.TileType.Building);
+		}
 		*/
 	}
 	
@@ -79,7 +100,7 @@ public class Tile : MonoBehaviour1 {
 	public void setBuilding(Building dog) {
 		containedBuilding = dog;
 	}
-	
+	*/
 	public Map getMap() {
 		return currentMap;
 	}
@@ -87,13 +108,13 @@ public class Tile : MonoBehaviour1 {
 	void setMap(Map m) {
 		currentMap = m;
 	}
-	*/
+	
 	
 	public Tile.TileType getType() {
 		return type;
 	}
 	
-	void setType(Tile.TileType x) {
+	public void setType(Tile.TileType x) {
 		type=x;
 	}
 	
@@ -101,7 +122,8 @@ public class Tile : MonoBehaviour1 {
 	
 	/**Types of tiles**/
 	public enum TileType{
-		grass,
-		water,
+		Grass,
+		Water,
+		Building,
 	}
 }
