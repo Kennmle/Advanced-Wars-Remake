@@ -6,12 +6,11 @@ using System;
 public abstract class Commander : MonoBehaviour {
 
 
-    private String name; // name is better
+    private String co; // name is already something in this retared-ass language
     private int cozone;
     private int copower;
-    private Image img; // this is necessary you POS
+    //private Image img; // this is necessary you POS, this isn't in this language
 
-    //private ImageIcon img; motherfucker
 
     // returns name of the commander
     public String getName()

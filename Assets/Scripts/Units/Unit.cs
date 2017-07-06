@@ -5,7 +5,6 @@ using UnityEngine;
 public abstract class Unit : MonoBehaviour
 {
     private int health; //go to hellth
-    private int vision; //I'll give you vision of this dick
     private int movement; //you best move your ass out of the way
     private int ammo; //I'll use this ammo to bust your cap
     private int cost; //This is gonna cost you pal
@@ -35,19 +34,11 @@ public abstract class Unit : MonoBehaviour
     {
         return health;
     }
-    public void setVision(int x)
-    {
-        vision = x;
-    }
-    public int geVision()
-    {
-        return vision;
-    }
     public void setMove(int x)
     {
         movement = x;
     }
-    public int getMove()
+    public int getMovement()
     {
         return movement;
     }
