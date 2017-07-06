@@ -2,7 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Commander : MonoBehaviour {
+public abstract class Commander : MonoBehaviour {
+
+
+    private String name;
+    private int cozone;
+    private int copower;
+    private ImageIcon img;
+
 
 	// Use this for initialization
 	void Start () {
