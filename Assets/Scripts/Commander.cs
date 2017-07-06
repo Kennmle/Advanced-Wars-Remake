@@ -6,10 +6,10 @@ using System;
 public abstract class Commander : MonoBehaviour {
 
 
-    private String co; // name is already something in this retared-ass language
+    private String name; // It doesn't matter if its already something, each class is different so its okay to have two different names
     private int cozone;
     private int copower;
-    //private Image img; // this is necessary you POS, this isn't in this language
+    private Image img; // Yes it is, https://msdn.microsoft.com/en-us/library/system.drawing.image(v=vs.110).aspx 
 
 
     // returns name of the commander
