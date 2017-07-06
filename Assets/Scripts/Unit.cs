@@ -9,7 +9,8 @@ public abstract class Unit : MonoBehaviour
     private int move; //you best move your ass out of the way
     private int ammo; //I'll use this ammo to bust your cap
     private int cost; //This is gonna cost you pal
-    private int attack; //Attack on titan gives me cancer
+    private int attack1; //Attack on titan gives me cancer
+    private int attack2;
     private int defense; //Dee-fuck you
     private int fuel; //You have too much gas
     private int range; //y: (0, 6) U (7, 90]
@@ -66,13 +67,21 @@ public abstract class Unit : MonoBehaviour
     {
         return cost;
     }
-    public void setAttack(int x)
+    public void setAttack1(int x)
     {
-        attack = x;
+        attack1 = x;
     }
-    public int getAttack()
+    public int getAttack1()
     {
-        return attack;
+        return attack1;
+    }
+    public void setAttack2(int x)
+    {
+        attack2 = x;
+    }
+    public int getAttack2()
+    {
+        return attack2;
     }
     public void setDefense(int x)
     {
