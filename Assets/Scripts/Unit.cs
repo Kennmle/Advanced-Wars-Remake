@@ -4,15 +4,15 @@ using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
 {
-    private int health;
-    private int vision;
-    private int move;
-    private int ammo;
-    private int cost;
-    private int attack;
-    private int defense;
-    private int fuel;
-    private int range;
+    private int health; //go to hellth
+    private int vision; //I'll give you vision of this dick
+    private int move; //you best move your ass out of the way
+    private int ammo; //I'll use this ammo to bust your cap
+    private int cost; //This is gonna cost you pal
+    private int attack; //Attack on titan gives me cancer
+    private int defense; //Dee-fuck you
+    private int fuel; //You have too much gas
+    private int range; //y: (0, 6) U (7, 90]
 
     // Use this for initialization
     void Start()
