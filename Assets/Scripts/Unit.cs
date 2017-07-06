@@ -6,7 +6,7 @@ public abstract class Unit : MonoBehaviour
 {
     private int health; //go to hellth
     private int vision; //I'll give you vision of this dick
-    private int move; //you best move your ass out of the way
+    private int movement; //you best move your ass out of the way
     private int ammo; //I'll use this ammo to bust your cap
     private int cost; //This is gonna cost you pal
     private int attack1; //Attack on titan gives me cancer
@@ -45,11 +45,11 @@ public abstract class Unit : MonoBehaviour
     }
     public void setMove(int x)
     {
-        move = x;
+        movement = x;
     }
     public int getMove()
     {
-        return move;
+        return movement;
     }
     public void setAmmo(int x)
     {
@@ -107,4 +107,8 @@ public abstract class Unit : MonoBehaviour
     {
         return range;
     }
+
+    public abstract void move();
+
+    public abstract void damage();
 }
