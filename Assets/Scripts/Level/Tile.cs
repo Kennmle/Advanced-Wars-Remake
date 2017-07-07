@@ -7,6 +7,7 @@ public class Tile : MonoBehaviour1 {
 	/**Fields**/
 	private int x;
 	private int y;
+	private Unit containedUnit;
 	private Building containedBuilding;
 	private TileType type;
 	
@@ -67,6 +68,13 @@ public class Tile : MonoBehaviour1 {
 		containedBuilding = dog;
 	}
 	
+	public Unit getUnit() {
+		return containedUnit;
+	}
+	
+	public void setUnit(Unit cat) {
+		containedUnit = cat;
+	}	
 	
 	public Tile.TileType getType() {
 		return type;

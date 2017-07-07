@@ -24,7 +24,26 @@ public class Map : MonoBehaviour1 {
 		
 	}
 	
-	public Tile getTile(int x, int y)
+	public int getMapWidth() {
+		return tiles.GetLength(0);
+	}
+	
+	public int getMapHeight() {
+		return tiles.GetLength(1);
+	}
+	
+	public Unit findUnit(int x, int y) {
+		return tiles[x,y].getUnit();
+	}
+	
+	public Tile findTile(Unit x) {
+		foreach (Tile t in tiles)
+			if(t.getUnit()==x)
+				return t;
+		return null;
+	}
+	
+	public Tile findTile(int x, int y)
 	{
 		return tiles[x,y];
 	}
@@ -47,7 +66,7 @@ public class Map : MonoBehaviour1 {
 			tileArray[t.getX(),t.getY()]=t;
 			//Determines TileType
 			
-			Material tileMat = GetComponent<Renderer>().material;
+			Material tileMat = t.GetComponent<Renderer>().material;
 			if(tileMat==grassMat)
 			{
 				t.setType(Tile.TileType.Plain);

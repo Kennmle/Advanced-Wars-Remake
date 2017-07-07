@@ -13,6 +13,7 @@ public abstract class Unit : MonoBehaviour
     private int defense; //Dee-fuck you
     private int fuel; //You have too much gas
     private int range; //y: (0, 6) U (7, 90]
+	private bool hasActed; //reflects whether the unit has acted (movcd and/or attacked+) this turn. To be reset each turn
 	//WHO THE FUCK????
 	
 	
@@ -111,6 +112,15 @@ public abstract class Unit : MonoBehaviour
         return range;
     }
 
+	public bool acted()
+	{
+		return hasActed;
+	}
+	
+	public void setActed(bool x) {
+		hasActed=x;
+	}
+	
     public abstract void move();
 
     public abstract void damage();
