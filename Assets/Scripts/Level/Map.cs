@@ -45,7 +45,22 @@ public class Map : MonoBehaviour1 {
 		
 		foreach(Tile t in temp) {
 			tileArray[t.getX(),t.getY()]=t;
-			t.DetermineTileType();
+			//Determines TileType
+			
+			Material tileMat = GetComponent<Renderer>().material;
+			if(tileMat==grassMat)
+			{
+				t.setType(Tile.TileType.Plain);
+			}
+			if(tileMat==waterMat)
+			{
+				t.setType(Tile.TileType.Sea);
+			}
+			//It is important that contaiendBuilding is last, as to overwrite grass/what's underneath (regardless of material)
+			if(t.getBuilding())
+			{
+				t.setType(Tile.TileType.City);
+			}
 		}
 		
 		return tileArray;

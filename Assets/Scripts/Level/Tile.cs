@@ -7,26 +7,23 @@ public class Tile : MonoBehaviour1 {
 	/**Fields**/
 	private int x;
 	private int y;
-	//private Unit containedUnit;
-	//private Building containedBuilding;
-	private Map currentMap;
+	private Building containedBuilding;
 	private TileType type;
 	
 	/**End of fields**/
 	
 	void Awake() {
-		this.setMap(this.GetComponentInParent<Map>());
 	
 		//Sets x and y based on position on the map, assumes map starts at (0,0)
 		setX((int)this.gameObject.transform.position.x);
 		setY((int)this.gameObject.transform.position.y);
+		containedBuilding=GetComponentInChildren<Building>();
 		
 	}
 	// Use this for initialization
 	void Start () {
 		
 	}
-	//Note: I leave containedBuilding to be set by Building class 
 	
 	// Update is called once per frame
 	void Update () {
@@ -40,27 +37,6 @@ public class Tile : MonoBehaviour1 {
 			containedUnit.OnClick();
 		else if (containedBuilding)
 			containedBuilding.OnClick();
-		*/
-	}
-	
-	//Add all tile types to Determine Tile Type (as well as to the public variables (type)Material
-	public void DetermineTileType()
-	{
-		Material tileMat = GetComponent<Renderer>().material;
-		if(tileMat==currentMap.grassMat)
-		{
-			this.setType(Tile.TileType.Grass);
-		}
-		if(tileMat==currentMap.waterMat)
-		{
-			this.setType(Tile.TileType.Water);
-		}
-		/*
-		//It is important that contaiendBuilding is last, as to overwrite grass/what's underneath (regardless of material)
-		if(containedBuilding)
-		{
-			this.setType(Tile.TileType.Building);
-		}
 		*/
 	}
 	
@@ -83,30 +59,12 @@ public class Tile : MonoBehaviour1 {
 		y = y1;
 	}
 	
-		//returns current unit
-	/*
-	public Unit getUnit() {
-		return containedUnit
-	}
-	
-	public void setUnit(Unit cat) {
-		containedUnit = cat;
-	}
-	
 	public Building getBuilding() {
-		return containedUnit
+		return containedBuilding;
 	}
 	
 	public void setBuilding(Building dog) {
 		containedBuilding = dog;
-	}
-	*/
-	public Map getMap() {
-		return currentMap;
-	}
-	
-	void setMap(Map m) {
-		currentMap = m;
 	}
 	
 	
@@ -122,8 +80,8 @@ public class Tile : MonoBehaviour1 {
 	
 	/**Types of tiles**/
 	public enum TileType{
-		Grass,
-		Water,
-		Building,
+		HQ,	City,	Factory,	Airport,	Seaport,	TempAir,	TempSea,
+		Plain,	River,	Road,	Wood,	Wasteland,	Ruins,	Mountain,
+		Beach,	Bridge,	Sea,	Reef,	RoughSea,	Mist,
 	}
 }
