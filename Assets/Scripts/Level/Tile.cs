@@ -74,7 +74,11 @@ public class Tile : MonoBehaviour1 {
 	
 	public void setUnit(Unit cat) {
 		containedUnit = cat;
-	}	
+	}
+	
+	public bool containsUnit() {
+		return containedUnit!=null;
+	}
 	
 	public Tile.TileType getType() {
 		return type;

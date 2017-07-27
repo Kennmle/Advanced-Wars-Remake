@@ -35,6 +35,14 @@ public class Team : MonoBehaviour1 {
 		return buildings;
 	}
 	
+	public bool contains(Unit u) {
+		return units.Contains(u);
+	}
+	
+	public bool contains(Building b) {
+		return buildings.Contains(b);
+	}
+	
 	public int getFunds()
 	{
 		return funds;
