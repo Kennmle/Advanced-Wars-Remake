@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Building : MonoBehaviour1 {
+public abstract class Building : MonoBehaviour {
 
 	private int captureProgress;
 	//private Team currentTeam;

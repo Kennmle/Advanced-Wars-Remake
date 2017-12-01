@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Map : MonoBehaviour1 {
+public class Map : MonoBehaviour {
 
 	/**Fields**/
 	Tile[] tempTiles;

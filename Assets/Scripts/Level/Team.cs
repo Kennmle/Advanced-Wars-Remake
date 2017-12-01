@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Team : MonoBehaviour1 {
+public class Team : MonoBehaviour {
 	private List<Unit> units;
 	private List<Building> buildings;
 	private Commander co;

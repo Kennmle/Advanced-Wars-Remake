@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tile : MonoBehaviour1 {
+public class Tile : MonoBehaviour {
 
 	/**Fields**/
 	private int x;
@@ -78,6 +78,10 @@ public class Tile : MonoBehaviour1 {
 	
 	public bool containsUnit() {
 		return containedUnit!=null;
+	}
+	
+	public bool containsBuilding() {
+		return containedBuilding!=null;
 	}
 	
 	public Tile.TileType getType() {
