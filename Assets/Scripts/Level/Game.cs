@@ -109,7 +109,7 @@ public class Game: MonoBehaviour {
 			u.refresh(); //Placeholder name, idea is to reallow movement, reduce gas, supply, etc. Either make in Unit or this class
 		}
 		*/
-		teams[current].addFunds(income*teams[current].getBuildings().Count);
+		//teams[current].addFunds(income*teams[current].getBuildings().Count);
 	}
 	
 	int getGameState()
