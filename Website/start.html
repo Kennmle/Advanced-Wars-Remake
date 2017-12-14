@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Website</title>
+	<link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
+	<link id="colorScheme" href="stylesheets/colors/light.css" rel="stylesheet" type="text/css">
+	<script src="JS/tab.js"></script>
+</head>
+
+<body>
+	<div id="header"><h1>Advance Wars Remake</h1></div>
+
+	<div id="nav"><table id="nav1">
+	<tr><td id="side1" onclick=tab(1) class="active">Home Page</td></tr>
+	<tr><td id="side2" onclick=tab(2) class="inactive">Tab 2</td></tr>
+	<tr><td id="side3" onclick=tab(3) class="inactive">Battle</td></tr>
+	<tr><td id="side4" onclick=tab(4) class="inactive">Tab 4</td></tr>
+	<tr><td id="side5" onclick=tab(5) class="inactive">Tab 5</td></tr>
+	<tr><td id="side6" onclick=tab(6) class="inactive">Tab 6</td></tr>
+	<tr><td id="side7" onclick=tab(7) class="inactive">Tab 7</td></tr>
+	</table></div>
+
+		<div id="tab1" class="current">
+		<h1>Home Page</h1>
+		<p>This is the page we are using to quickly traverse all the data we need, as well as any extra information
+		<br>
+		I know the colors are ugly AF rn. Feel free to make more color schemes/change the current 2/make suggestions</p>
+		<h3>Friendly Reminders</h3>
+		<p> Be sure to sync Git whenever you are pushing and pulling. Also the Unity project should now be pointing to the folder "Advanced_Wars_Unity" (you will have to do this yourself)
+
+		</div>
+
+		<div id="tab2" class="hidden">
+		<h1>Tab 2</h1>
+		<p>This is information displayed on tab 2</p>
+		<p>Hopefully I will see this</p>
+		</div>
+
+		<div id="tab3" class="hidden">
+		<h1>Battle System</h1>
+		<p>This contains information pulled from the guide (link is also on the home page)</p>
+		<p>The general formula for damage is: <br><br>
+			[RANDOM NO. (0 to 1)] X [UNIT HP] X [ATTACK STAT / TARGET DEFENSE STAT]<br><br>
+			Aside from the tables (on the guide), there are a few important details to note for whomever is implementing the battle system:
+			<ul>
+				<li>Only 5 units have a both a primary and secondary fire: Mech, all three Tanks, and B-Copter</li>
+				<li>We might have to make two fields for weapon types (for primary and secondary), and let "none" be an option</li>
+				<li>The guide also has a section on how defense is calculated with discrete values</li>
+			</ul>
+		</p>
+		</div>
+
+		<div id="tab4" class="hidden">
+		<h1>Tab 4</h1>
+		<p>This is information displayed on tab 4</p>
+		<p>Insert Text Here</p>
+		</div>
+
+		<div id="tab5" class="hidden">
+		<h1>Tab 5</h1>
+		<p>This is information displayed on tab 5</p>
+		<p>Insert Text Here</p>
+		</div>
+
+		<div id="tab6" class="hidden">
+		<h1>Tab 6</h1>
+		<p>This is information displayed on tab 6</p>
+		<p>Insert Text Here</p>
+		</div>
+
+		<div id="tab7" class="hidden">
+		<h1>Tab 7</h1>
+		<p>This is information displayed on tab 7</p>
+		<p>Insert Text Here <br> We probably won't need this many tabs</p>
+		</div>
+
+	<div id="other">
+	<h1>Links</h1>
+	<p> They will open in new tabs automatically!
+	<ul>
+		<li><a href="http://www.gamesradar.com/cheats/13550/" target="_blank">Game guide</a></li>
+		<li><a href="https://www.lucidchart.com/documents/edit/56345310-20f5-40dd-b4ca-a13cc1f511e8?shared=true&#" target="_blank">UML Chart</a></li>
+		<li><a href="https://drive.google.com/drive/folders/1mevQZWj1xOXMPU7fQnUzP25j86zriiRp?usp=sharing" target="_blank">Google Drive Folder</a></li>
+		<li><a href="https://unity3d.com/get-unity/update" target="_blank">Update Unity</a></li>
+		<li><a href="https://github.com/Kennmle/Advanced-Wars-Remake" target="_blank">GitHub Repo</a></li>
+
+	</ul>
+
+		<br><br>
+		<h4>Color Schemes</h4>
+		<table>
+			<tr><td onclick=switchColor("light") style="color: #000000; background-color:#DCDCA3"> Bright </td></tr>
+			<tr><td onclick=switchColor("dark") style="color: #c0c0ca; background-color:#101235"> Dark </td></tr>
+		</table>
+	</p>
+	</div>
+
+	<div id="foot">Made by a big boi</div>

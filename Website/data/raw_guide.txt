@@ -1,0 +1,3379 @@
+===================================================
+ADVANCE WARS DAYS OF RUIN / DARK CONFLICT UNITS FAQ
+===================================================
+v1.32 (01/Jun/2008)
+Created By generiX
+
+ADVANCE WAR-NING!
+-----------------
+To All Days Of Ruin Owners! I use EU unit names in this FAQ. I do mention US
+names, but they are NOT commonplace! Neither are US CO names, CO Power names or
+anything else.
+
+=====
+INDEX
+=====
+
+1. Introduction
+2. Game Mechanics
+	a) Damage Formula
+	b) Defense Formula
+	c) Movement Costs Table
+	d) General Strategies
+		01) Early Game
+		02) Direct Fire Units
+		03) Indirect Fire Units
+		04) COs And CO Powers
+		05) Choke Point Central
+		06) How To Beat Various Map Types
+3. The Units
+	a) Ground Units
+		01) Infantry
+		02) Bazooka/US Mech
+		03) Motorbike
+		04) Recon
+		05) Flare
+		06) Anti-Air
+		07) Tank
+		08) Heavy Tank/US Medium Tank
+		09) Mega Tank/US War Tank
+		10) Mech Gun/US Artillery
+		11) Anti-Tank
+		12) Rockets
+		13) Missiles
+		14) Mobile Workshop/US Rig
+	b) Naval Units
+		01) Battleship
+		02) Carrier
+		03) Submarine
+		04) Cruiser
+		05) Lander
+		06) Missile Boat/US Gunboat
+	c) Aerial Units
+		01) Interceptor/US Fighter
+		02) Bomber
+		03) Fighter/US Duster
+		04) Battle Helicopter
+		05) Transport Helicopter
+		06) Ship Plane/US Seaplane
+3. Thanks
+
+===============
+1. INTRODUCTION
+===============
+
+Hello, and welcome to my first FAQ on an Advance Wars game! Simply put, the
+Advance Wars series is easily one of the most underadvertised games Nintendo
+make, and also one of the best! If you've never played Advance Wars before (why
+are you looking at this then?), it is probably best that you go out and find a
+copy of the original game and get hooked up (AW:DC, while it is absolutely
+BRILLIANT, it's also extremely difficult, almost on par with AW2). I aim to
+lend the uninitiated a helping hand with the game by listing details on the 26
+units of the game.
+
+Personally, this game is right up there as one of THE best games in the world.
+The previous incarnations were also brilliant, but AW2 was frustratingly
+difficult, and AW:DS was, in a word, unbalanced. Even an absolute idiot could
+win thanks to some COs who were beyond broken, and to some units which were
+almost unstoppable. Now, AW:DC is perfectly balanced, there are no overpowerful
+COs (well, one), and every unit can be countered, resulting in a strategic
+masterpiece with potentially limitless replay value (thanks to an awesome map
+editor).
+
+Differences Between AW:DC and AW:DOR
+------------------------------------
+* A lot of identities are different, such as the army titles, CO names, CO
+  Power names, and some terrain tiles.
+* Several units have different identities, and the descriptive text is also
+  different. In my opinion, AW:DOR have worser unit names (exclude Mech and
+  Artillery, maybe Seaplane).
+* While the storyline is the same, the language used in AW:DC is much more
+  serious (and better) than in AW:DOR. AW:DOR also has a liberal spread of
+  profanities in the script.
+* The title icon has a different look between games (not just the name change,
+  obviously).
+* There are also rumors of random game glitches in AW:DOR not present in AW:DC.
+  I don't remember the exact details, but it involved submerged subs, bridges,
+  and infantry.
+* The personalities of some of AW:DOR's COs are much more extreme than in AW:DC
+  (to the point where Lili and Penny act completely differently).
+
+SERVICE HISTORY
+---------------
+v0.1  18/Apr/2008 - Began work on the FAQ.
+v1.0  06/May/2008 - Eventually remembered to finish the FAQ and get enough data
+                    in for a worthwhile posting on gameFAQs.
+v1.1  18/May/2008 - Massive influx of new (and maybe useful) data.
+      20/May/2008 - Allowed SuperCheats.Com permission to host the FAQ.
+v1.2  21/May/2008 - Allowed MyCheats.Com and NeoSeeker.Com permission to host
+                    the FAQ. Refined damage charts and included 'Attacks Used'
+                    charts for units, and added additional info in various
+                    sections.
+      22/May/2008 - Discovered and corrected minor errors.
+v1.3  23/May/2008 - Created the 'General Strategies' section (I know, it's
+                    getting a bit beyond a simple unit guide).
+      30/May/2008 - Allowed gamesradar.com permission to host the FAQ. Possible
+                    typo fixes included.
+v1.31 31/May/2008 - Corrected an error in the damage chart, and included a
+                    separate 'Secondary Attack Chart' section.
+v1.32 01/Jun/2008 - Corrected another damage chart error. Added a few random
+                    details here and there.
+
+Speaking of which, gameFAQs is the sole site allowed to host this FAQ. Anybody
+caught posting this FAQ elsewhere will be mercilessly hunted down by a killer
+lawsuit. Or something like that. I mean, I wrote this FAQ to be read by all,
+just ask before nicking it for your own sites.
+
+EDIT - Other sites have started calling for permission. I shall now list the
+sites which have permission to host the FAQ
+
+# gameFAQs.com
+# supercheats.com
+# mycheats.com
+# neoseeker.com
+# gamesradar.com
+
+Whatever you do, don't claim this FAQ as your own work. It makes no sense at
+all. It is the work of pretty much every Advance Wars forum on the internet.
+Without those guys, this guide would have been left in limbo for a long time.
+
+=================
+2. GAME MECHANICS
+=================
+
+A) DAMAGE FORMULA
+-----------------
+If you want to win, you need to understand how the damage system in this game
+works. If you have arrived here straight from AWDS, listen up; the formula has
+changed slightly. The formula is:-
+
+[BASE DAMAGE] X [ATTACKER HP / 10] X [ATTACK STAT / TARGET DEFENSE STAT]
+In the case of an attack which ends in decimal figures, the final damage is
+ROUNDED DOWN.
+
+Example: A Tank hits an enemy Tank on a road. The formula would become:-
+
+55% X 10/10 X 100/100 = 55% Damage.
+
+That was kind of obvious; there was no defensive cover, and the attack power of
+the Tank was basic. Now assume the enemy Tank is on a Woods tile, and it has an
+Ace/Veteran level. The attacker has 8HP and is at Level 1. The formula changes
+to:-
+
+55% X 08/10 X 105/(100+20+30) = 30.8%, rounds down to 30%.
+Quite significant.
+
+Also, units can deal additional damage known as 'luck'. Luck is calculated as a
+random value between 0 and 1, and is multiplied by the unit HP to give up to an
+additional 10% damage. Of course this means that weaker units cannot
+unexpectedly deal another 1HP of damage, and weaker units will generally deal
+less luck damage than healthy units.
+
+Luck damage is also weakened by the Attack/Defense ratio mentioned earlier
+(during Finn's CO Power Bad Company, it gets to the point where luck damage is
+basically negligable). I am unsure of the exact formula, but my guess is:-
+
+[RANDOM NO. (0 to 1)] X [UNIT HP] X [ATTACK STAT / TARGET DEFENSE STAT]
+
+Here is how the Attack stat is determined:-
+
+# The default value for attack is 100%.
+# If the unit is at Level 1, add another 5%.
+# If the unit is at Level 2, add another 10%.
+# If the unit is at Level Ace/Vet, add another 20%
+# If the unit is in the Command (CO) Zone, add another 10%.
+# If the unit is in the CO Zone and meets the COs criteria, add another 10% for
+  each star.
+# If the team has any Communications Towers in their possession, add another 5%
+  for each one.
+# If there is a Sandstorm in effect (and the CO is not Lili), subtract 30%.
+
+For your convenience, here is a list of base damage values for each unit type
+combination, including those damn Meteor fragments. These are for the IDEAL
+circumstances: the enemy has 100% defense (no cover) and the attack stat is
+also 100%, and the Primary Weapon has ammo. Cases where primary ammo runs out
+are mentioned shortly.
+
+/===========+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===\
+| \ Defender|   |   |   |   |   |   |   |   |   |   |   |   |   | M | B |
+|  \        |   |   | M |   |   |   |   | H | M |   | A |   |   | . | a |
+|   \       | I |   | o |   |   | A |   | v | e | M | n |   | M | W | t |
+|    \      | n | B | t |   |   | n |   | y | g | e | t | R | i | o | t |
+|     \     | f | a | o |   |   | t |   | . | a | c | i | o | s | r | l |
+|      \    | a | z | r | R | F | i |   |   |   | h | - | c | s | k | e |
+|       \   | n | o | b | e | l | - | T | T | T |   | T | k | i | s | s |
+|        \  | t | o | i | c | a | A | a | a | a | G | a | e | l | h | h |
+|         \ | r | k | k | o | r | i | n | n | n | u | n | t | e | o | i |
+|Attacker  \| y | a | e | n | e | r | k | k | k | n | k | s | s | p | p |
+>===========+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===<
+|Infantry   | 55| 45| 45| 12| 10| 3 | 5 | 5 | 1 | 10| 30| 20| 20| 14|---|
+|Bazooka    | 65| 55| 55| 85| 80| 55| 55| 25| 15| 70| 55| 85| 85| 75|---|
+|Motorbike  | 65| 55| 55| 18| 15| 5 | 8 | 5 | 1 | 15| 35| 35| 35| 20|---|
+|Recon      | 75| 65| 65| 35| 30| 8 | 8 | 5 | 1 | 45| 15| 55| 55| 45|---|
+|Flare      | 80| 70| 70| 60| 50| 45| 10| 5 | 1 | 45| 15| 55| 55| 45|---|
+|Anti-Air   |105|105|105| 60| 50| 45| 15| 10| 1 | 50| 15| 55| 55| 50|---|
+|Tank       | 75| 70| 70| 85| 80| 75| 55| 35| 20| 70| 30| 85| 85| 75| 8 |
+|Hvy. Tank  | 90| 80| 80| 95| 90| 90| 70| 55| 35| 85| 35| 90| 90| 90| 10|
+|Mega Tank  |105| 95| 95|105|105|105| 85| 75| 55|105| 40|105|105|105| 12|
+|Mech Gun   | 90| 85| 85| 80| 75| 65| 60| 45| 35| 75| 55| 80| 80| 70| 45|
+|Anti-Tank  | 75| 65| 65| 75| 75| 75| 75| 65| 55| 65| 55| 70| 70| 65|---|
+|Rockets    | 95| 90| 90| 90| 85| 75| 70| 55| 45| 80| 65| 85| 85| 80| 55|
+|Missiles   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Battleship | 75| 70| 70| 70| 70| 65| 65| 50| 40| 70| 55| 75| 75| 65| 45|
+|Carrier    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Submarine  |---|---|---|---|---|---|---|---|---|---|---|---|---|---| 80|
+|Cruiser    |---|---|---|---|---|---|---|---|---|---|---|---|---|---| 38|
+|Msl. Boat  |---|---|---|---|---|---|---|---|---|---|---|---|---|---| 40|
+|Interceptor|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Bomber     |115|110|110|105|105| 85|105| 95| 75|105| 80|105| 95|105| 85|
+|Fighter    | 55| 45| 45| 18| 15| 5 | 8 | 5 | 1 | 15| 5 | 20| 20| 15|---|
+|Battle Heli| 75| 65| 65| 75| 75| 10| 70| 45| 35| 65| 20| 75| 55| 70| 25|
+|Ship Plane | 90| 85| 85| 80| 75| 45| 75| 65| 55| 70| 50| 80| 70| 75| 65|
+\===========+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===/
+
+/===========+===+===+===+===+===+===+===+===+===+===+===+===\
+|\  Defender|   |   |   |   |   | I |   |   | B | T |   |   |
+| \         |   |   |   |   |   | n |   |   | a | r | S |   |
+|  \        |   | S |   | M |   | t |   |   | t | a | h |   |
+|   \       |   | u |   | s |   | e |   |   | t | n | i |   |
+|    \      | C | b | C | l |   | r |   | F | l | s | p |   |
+|     \     | a | m | r | . | L | c | B | i | e | . |   | M |
+|      \    | r | a | u |   | a | e | o | g |   |   | P | e |
+|       \   | r | r | i | B | n | p | m | h | H | H | l | t |
+|        \  | i | i | s | o | d | t | b | t | e | e | a | e |
+|         \ | e | n | e | a | e | o | e | e | l | l | n | o |
+|Attacker  \| r | e | r | t | r | r | r | r | i | i | e | r |
+>===========+===+===+===+===+===+===+===+===+===+===+===+===<
+|Infantry   |---|---|---|---|---|---|---|---| 8 | 30|---| 1 |
+|Bazooka    |---|---|---|---|---|---|---|---| 12| 35|---| 15|
+|Motorbike  |---|---|---|---|---|---|---|---| 12| 35|---| 1 |
+|Recon      |---|---|---|---|---|---|---|---| 18| 35|---| 1 |
+|Flare      |---|---|---|---|---|---|---|---| 18| 35|---| 5 |
+|Anti-Air   |---|---|---|---|---| 70| 70| 75|105|120| 75| 10|
+|Tank       | 8 | 9 | 9 | 55| 18|---|---|---| 18| 35|---| 20|
+|Hvy. Tank  | 10| 12| 12| 55| 22|---|---|---| 24| 40|---| 35|
+|Mega Tank  | 12| 14| 14| 65| 28|---|---|---| 35| 45|---| 55|
+|Mech Gun   | 45| 55| 55|105| 65|---|---|---|---|---|---| 45|
+|Anti-Tank  |---|---|---|---|---|---|---|---| 45| 55|---| 55|
+|Rockets    | 55| 65| 65|105| 75|---|---|---|---|---|---| 55|
+|Missiles   |---|---|---|---|---|100|100|100|120|120|100|---|
+|Battleship | 50| 65| 65| 95| 75|---|---|---|---|---|---| 55|
+|Carrier    |---|---|---|---|---| 35| 35| 40| 45| 55| 40|---|
+|Submarine  |110| 55| 20|120| 85|---|---|---|---|---|---|---|
+|Cruiser    | 38| 95| 28| 85| 40|105|105|105|120|120|105|---|
+|Msl. Boat  | 40| 40| 40| 75| 55|---|---|---|---|---|---|---|
+|Interceptor|---|---|---|---|---| 55| 65| 80|120|120| 65|---|
+|Bomber     | 85| 95| 50|120| 95|---|---|---|---|---|---| 90|
+|Fighter    |---|---|---|---|---| 40| 45| 55| 75| 90| 45| 1 |
+|Battle Heli| 15| 15| 5 | 85| 15|---|---|---| 65| 85|---| 20|
+|Ship Plane | 65| 55| 40|105| 85| 45| 55| 65| 85| 95| 55| 55|
+\===========+===+===+===+===+===+===+===+===+===+===+===+===/
+
+In some rare cases, you can continue to attack the enemy using Secondary
+Weapons when you run out of ammo. It is extremely inadvisable to run around the
+battlefield with no ammo, but as a last resort they can sometimes do okay
+levels of damage (but only against unarmoured ground units).
+
+There are five units that can attack even when out of ammo: the Bazooka, all
+three Tank types, and the Battle Heli.
+
+Bazooka
+-------
+Bazooka and Motorbike units share the same Machine Gun type, so the damage is
+the same for both.
+
+Light Tank vs.
+--------------
+Recon:      40%
+Flare:      35%
+Anti-Air:    8%
+Light Tank:  8%
+Heavy Tank:  5%
+Mega Tank:   1%
+Mech Gun:   45%
+Anti Tank:   1%
+Rockets:    55%
+Missiles:   55%
+Workshop:   45%
+Meteor:      1%
+
+Heavy Tank vs.
+--------------
+Recon:      40%
+Flare:      35%
+Anti-Air:    8%
+Light Tank:  8%
+Heavy Tank:  5%
+Mega Tank:   1%
+Mech Gun:   45%
+Anti Tank:   1%
+Rockets:    60%
+Missiles:   60%
+Workshop:   45%
+Meteor:      1%
+
+Mega Tank vs.
+-------------
+Recon:      45%
+Flare:      40%
+Anti-Air:   10%
+Light Tank: 10%
+Heavy Tank: 10%
+Mega Tank:   1%
+Mech Gun:   45%
+Anti Tank:   1%
+Rockets:    65%
+Missiles:   65%
+Workshop:   45%
+Meteor:      1%
+
+Battle Heli vs.
+---------------
+Recon:      30%
+Flare:      30%
+Anti-Air:    1%
+Light Tank:  8%
+Heavy Tank:  8%
+Mega Tank:   1%
+Mech Gun:   25%
+Anti Tank:   1%
+Rockets:    35%
+Missiles:   25%
+Workshop:   20%
+Meteor:      1%
+
+B) DEFENSE FORMULA
+------------------
+Defense works dramatically different from previous games. Earlier, defense was
+known as 'Absolute', meaning that 20% defensive cover reduced damage by exactly
+20%. With enough defense (I'm looking at Javier here) units could become
+completely invulnerable. Now, defense works as an Attack/Defense RATIO. It'll
+make sense in a minute.
+
+# The default value for defense is 100%.
+# If the unit has Ace/Veteran status, add another 20%.
+# If the unit is in the CO Zone, add another 10%.
+# If the unit is in the CO Zone and fills the COs criteria, add another 10% for
+  each star.
+# If the team has any Communications Towers in their possession, add another 5%
+  for each one.
+# If the unit is lying on defensive cover, add another 1% for each star,
+  multiplied by the units HP.
+# If Finn's CO Power (Bad Company) is in effect, add another 250% (I worked
+  this out on my own, however I don't know if anybody else found out this
+  exact value first, mail me on this one).
+
+C) MOVEMENT COSTS TABLE
+-----------------------
+I should mention now that the two tables here aren't entirely my work. The
+information was found on several AW forums and gameFAQs, and the table design
+is adapted from a chart by 'Deathborn 668'. The chart indicates how many
+mobility points are used up in crossing each type of terrain. Higher movement
+costs cause the actual mobility of the unit to falter.
+
+/=======+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===\
+|   Tile|   |   |   |   |   |   | C |   |   |   |   |   |   | M |   | W |
+|       |   |   |   |   |   |   | o |   |   |   |   |   |   | o |   | a |
+|\      |   |   | F | A |   |   | m |   |   |   |   |   |   | u |   | s |
+| \     |   |   | a | i |   |   |   |   | B |   | P |   |   | n |   | t |
+|  \    |   |   | c | r |   | R | T |   | r |   | l | S | R | n | W | e |
+|   \   |   | C | t | p | P | a | o | S | i | R | a | h | i | t | o | l |
+|    \  |   | i | o | o | o | d | w | i | d | o | i | o | v | a | o | a |
+|     \ | H | t | r | r | r | a | e | l | g | a | n | a | e | i | d | n |
+|Type  \| Q | y | y | t | t | r | r | o | e | d | s | l | r | n | s | d |
+>=======+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===<
+|Inftry | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 2 | 2 | 1 | 1 |
+|Bzka   | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+|Tire A | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 2 | 2 |---|---| 3 | 3 |
+|Tire B | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 2 |---|---| 3 | 3 |
+|Tank   | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |---|---| 2 | 2 |
+|Air    | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |---| 1 | 1 | 1 |
+|Ship   |---|---|---|---| 1 |---|---|---| 1 |---|---|---| 1 |---|---|---|
+|Trpt   |---|---|---|---| 1 |---|---|---| 1 |---|---|---|---|---|---|---|
+\=======+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===/
+
+/=======+===+===+===+===+===+===+===+===\
+|\  Tile|   |   |   | R | S |   |   |   |
+| \     |   |   |   | g | e |   |   | P |
+|  \    | R |   |   | h | a |   |   | l |
+|   \   | u |   | R |   |   |   | F | a |
+|    \  | i | S | e | S | F | S | i | s |
+|     \ | n | e | e | e | o | k | r | m |
+|Type  \| s | a | f | a | g | y | e | a |
+>=======+===+===+===+===+===+===+===+===<
+|Inftry | 1 |---|---|---|---|---|---|---|
+|Mech   | 1 |---|---|---|---|---|---|---|
+|Tire A | 2 |---|---|---|---|---|---|---|
+|Tire B | 1 |---|---|---|---|---|---|---|
+|Tank   | 1 |---|---|---|---|---|---|---|
+|Air    | 1 | 1 | 1 | 1 | 1 | 1 |---|---|
+|Ship   |---| 1 | 2 | 2 | 1 |---|---|---|
+|Trpt   |---| 1 | 2 | 2 | 1 |---|---|---|
+\=======+===+===+===+===+===+===+===+===/
+
+D) GENERAL STRATEGIES
+---------------------
+
+01) Early Game
+--------------
+In the first stages of pretty much any good map, you'll be looking to capture
+properties to secure those all-important funds. Look around and find 'key'
+properties such as production bases, com towers, and mass clumps of cities. You
+should rush the capture of key distance properties rather than slowly expand
+your collection from your main area onwards.
+
+The various Infantry units have unique movement speeds and types, so they can
+reach properties in varying amounts of time. Basic Infantry have 3 mobility and
+are slowed down by mountains and rivers. They are also the cheapest of the
+three types, and are advised for capturing where the path is full of forests or
+wasteland. Bazooka/Mech units have 2 mobility and aren't slowed down at all
+(although at 2 mobility it's horribly slow). Use them for capturing through
+mountain ranges. Motorbikes have 5 mobility and are generally your best bet for
+long-range capturing, but they are massively slowed down by any non-paved/plain
+tile, and cannot cross mountains at all. They also cannot use Transporters
+(excluding Landers).
+
+For the less capable Infantry and Bazooka units, there are transport vehicles
+that you can utilise to massively boost their mobility. These are the Mobile
+Workshop, Transport Helicopter, Lander, and Missile Boat. They can drop off
+your Infantry in relative safety and, providing it can return to base, it can
+be re-used to transport more units around. However, they cost at least two
+Bazooka/Motorbike units to build, so they should be used carefully.
+
+Mobile Workshops can haul Infantry around ground maps with 6 mobility, resupply
+more rounds to Bazooka units, and build Temporary Structures (more on those
+later). In essence, these pretty much act as little 'bases' for your Bazooka
+units. However while they can easily outrun Motorbikes across heavy terrain,
+light unrestrictive land means that it can prove tricky for this unit to pay
+for itself in comparison to a Motorbike. On the plus side, it's fairly sturdy
+in the early game, and the onboard Infantry won't be harmed at all if it comes
+under fire(unless the unit is destroyed, in which case both units are lost).
+
+Transport Helicopters are usually your best bet for moving foot soldiers about.
+They travel by air, so they aren't slowed down at all, and they are fairly
+quick to boot. They burn fuel daily, so the return leg can be a little close
+for call on a few occasions. The main problem is that they are notoriously
+incapable of withstanding attacks, and they are preyed upon by a lot of stuff.
+
+Landing craft can transport 2 units of any type (from Infantry to Motorbike to
+Mega Tank) across naval maps. They are pretty damn strong and fairly quick.
+Only capable of dropping off units on Shoals and ports, it's range of areas it
+can be used for is sometimes a little off. It also burns fuel daily.
+
+Missile Boats are a new addition (and replaces the AW:DS Black Boat) and are a
+good thing to have around with you. They have the highest movement range of any
+transporter (7 mobility outruns a lot of stuff including every other naval
+unit) and act like Landers. They can transport ONE foot soldier (so it's like
+the Workshop) and drop off at beaches and the like. They are also capable of
+self-defense: they have a powerful anti-ship weapon that usually pays for the
+cost of the unit if it connects. After it strikes, it becomes defenseless,
+having only one shot. It's also extremely fragile and it doesn't take much
+effort to sink one.
+
+Once you've become skilled in perfecting your early game abilities, why not try
+screwing up your opponent's opening turns while you're at it? Usually you're
+best sticking to using Recons to disrupt the enemy as they are cheap, really
+fast (well, most of the time) and do enough damage to warrant some severe
+cursing from your opponent. Sometimes you can send other types around to cause
+annoyances. Using Flare tanks is a good idea on plains-heavy maps where Recons
+would get hit quite badly by the terrain penalty (as well as intercepting enemy
+Recons aiming to cause you some trouble as well). Battle Heli's and the
+Fighter/Duster are useful in long-range naval maps. However, doing this will
+usually just cause your opponent to divert his funds to developing a simple
+countermeasure (this is sometimes a good thing though). Rememer not to spend
+too much on early disrupture of the enemy, and focus on building a powerful
+assault force.
+
+If the enemy is causing you some hassle, develop counters of your own. A good
+way of trying to annoy enemy Recons is to prioritise building Bazooka units and
+Mobile Workshops to move them fast. Recons excel when they attack Infantry and
+Motorbikes because the counterattack damage only becomes apparent after a few
+attacks. Bazooka units can quickly nullify the threat of a Recon, and even if
+the Recon gets a first strike, the counter is much more noticeable.
+
+
+
+02) Direct Fire Units
+---------------------
+Direct units attack enemies by moving next to them to launch an attack. Direct
+attacks are simple and usually effective, but there are a few drawbacks, most
+notably luring. Be aware that most opponents are sneaky bastards and love to
+taunt your most important units into the range of their indirects and other
+powerhouses. Only wander into the range of indirects if you have enough units
+at hand to completely annahilate the enemy's stranglehold on the area, or you
+quite frankly have no choice in the matter.
+
+Direct attackers will suffer counterattack damage (unless the opponent can't
+hit the target, or the opponent is wiped out). Even the most resiliant units
+can have their HP slowly whittled away by luck damage. The best way to null
+the threat of counterattack damage in direct attacks is to maximise your attack
+power by unit promotion and CO Zone, or simply using heavy armour. Counter
+damage is basically negligable if you leave enemies at 2HP at most.
+
+Most of the time, direct units will be playing what is known as 'range dodging'
+with enemy units. On several occasions, tanks may face enemy tanks and stay at
+the edge of each other's attack range. This is rangedodging, and one reason why
+people keep shunning the Mega Tank. More agile units (Missile Boats and Light
+Tanks) can sit outside the range of other units and attack the next turn, often
+forcing the enemy to retreat. Don't let this happen to you. If it does, have
+spare units or heavy armour around to deter the threat.
+
+Fog of War has changed massively in the transition from the previous game.
+There are loads more hiding places for enemy units to hide around. Compared to
+before, unit vision is spread across the entire area that they move (instead of
+just being moved about, causing visible enemies to vanish from view), and so
+hiding places are much less effective. Have your directs drive past many hiding
+places in one turn to scan them all at once for the enemy, then whack'em!
+
+
+
+03) Indirect Fire Units
+-----------------------
+Indirect units bombard the enemy from far away with no fear of suffering a
+counterattack. Indirects cannot move and fire on the same turn (excuding the
+Battleship), cannot counterattack when hit (excluding the Anti-Tank) and have a
+'blind-spot' where it cannot strike (excuding both the above units).
+
+Indirects are fundamental in success in almost any map, but are at their most
+effective in choke-points (mentioned later). Indirects are also great for
+laying a defensive 'shroud of fire' around allied units: your units become much
+less attractive a target if enemies will get pounded by your Rockets!
+
+Protecting indirects is extremely important. Because they cannot counterattack
+(and because some are really costly), they will always be considered a priority
+target by your foe. They are also really fragile, so defending them becomes an
+art that must be mastered. Loads of people suggest the use of Infantry units as
+blocking units, but they cannot take much damage and are extremely easy to KO
+in one hit at that stage of the battle. Also, a good player can move his CO
+Zone so the shielding units charge his CO Meter like there was no tomorrow. The
+art of defending units with other units is commonly known as 'meatshielding'
+and it doesn't apply solely to indirects, either.
+
+Fog of War was almost a godsend for Indirects. Previously, all indirects were
+blind and needed Recons to spot stuff to shoot at. Now, the improved Mech
+Gun/Artillery unit has enough vision to act independantly from other units.
+Indirects use hiding places to thrive and survive, relentlessly pounding away
+at the enemy while they are stuck thinking "where the hell did that come from?"
+and such. If the area you wish to use has no hiding place, make one! Have a
+Mobile Workshop build a Temporary structure to hide your cowardly indirects.
+The enemy may now know where they are, but they can't hit it if they can't see
+it!
+
+
+
+04) COs And CO Powers
+---------------------
+There are twelve Commanding Officers (COs) in this game and they all play quite
+differently. There is also a 13th option: playing with no CO at all. I advise
+inexperienced players to fight a few Free Battles in No CO mode. The boost from
+the CO Zone may be handy, but in most cases there are multiple battles all over
+the place and you can only fight the rest using a 'bland' army. Get used to
+getting units at Ace/Veteran Level: these are extremely important for No CO
+mode. Units level-up when they KILL a unit (whichever unit lands the last hit
+gets the level, even if they did minimal damage).
+
+To use the abilities of the CO, he/she must first board the unit, either at the
+HQ or a production base (temp. structures don't count). When the unit is on one
+select the CO option from the move menu (don't move the unit from the base) to
+board the unit at 50% the cost of the unit it has boarded. CO Units are at the
+maximum level (Ace/Vet) by default, and they also generate a CO Zone around
+them. The radius and effects of the Zone vary across COs.
+
+Ten of the COs also have a CO Power they can use to tear the rulebook to shreds
+and potentially turn the entire game around. Battles that take place in the CO
+Zone increase the CO Meter. The meter has two distinct halves, each with 6
+individual segments. Each segment fills up with every 5HP damage you cause,
+irrespective of what unit it was. Counterattack damage by your units also fuel
+the CO Meter, but the enemy must also be in the CO Zone for this to occur.
+
+When the first half of the CO Meter is filled, the radius of the CO Zone goes
+up by one. When filled totally, the radius increases by another one, and the CO
+unit can choose to exchange its entire meter (and its turn) for usage of the CO
+Power. Upon usage of the CO Power, the meter drops to Zero, and the Zone fills
+the entire battlefield (so every unit gets boosted, not just those in the zone)
+however the meter cannot recharge during a CO Power. In addition to boosting
+all units, an additional effect occurs that helps the player. These vary from
+CO to CO, and some are more useful than others.
+
+If the CO Unit is destroyed, the meter falls to zero, the Zone dissappears, and
+the user will have to wait until his next turn to re-deploy the CO. If the CO
+Power was in effect, the effects of the CO Power will also be nulled.
+
+When it comes to the actual COs, you'll want to adapt your strategies to make
+the most of the abilities of the CO. The Zone gives a bland boost by default
+(10% increase in attack and defense) and other boosts depending on the CO.
+Stat boosts are mentioned as (Atk/Def %):-
+
+*SPOILER WARNING*
+
+Ed/Will
+Laurentian military cadet rescued by the 12th Independant Legion, led by
+Captain O'Brian. He vigilantly refuses to give up, at any cost. He also
+shares a close friendship with the amnesiac Catleia.
+CO Zone Radius: 2, boosts Ground Directs by 20%/00%.
+CO Power: New Era/Rally Cry. Increases mobility of Ground Directs by 2.
+
+Moderately useful. Although he is a specialist CO, the units he boosts are
+extremely important. During New Era, his directs gain enough mobility to
+allow him to tear dispersed enemy armies apart. His effectiveness weakens
+on choke-point laden and island maps.
+
+
+
+O'Brian/Brenner
+Captain of the 12th Independant Legion (Brenner's Wolves in AW:DOR), he has
+massive faith in the power of humanity. It remains strong despite the actions
+of people such as Admiral Sigismundo and the bloody Mayor of Freehaven. He is
+killed (or rather annahilated) by Sigismundo via one of Stolos' creations.
+CO Zone Radius: 3, boosts all units by 00%/20%
+CO Power: Lifeline/Reinforce. Restores 3HP to all units for free.
+
+Easily my favourite CO of them all. O'Brian is far from an aggressive CO to
+play as, so you will need to use a slow and steady approach. Defense boosts
+mean blocking units withstand more damage, so its best to use indirects as him.
+Lifeline patches up unit damage without cost (akin to Andy from earlier games),
+so build more expensive units to exploit the free repairs to the max.
+
+
+
+Lin
+Second in command of the 12th Independant Legion. Calm and 'unflappable', she
+believes that "In battle, the clearest thinker wins".
+CO Zone Radius: 1, boosts Ground Units by 20%/20%.
+CO Power: Night Vision/Scout. Increases vision by 2, hiding places become
+visible from any range.
+
+Another specialist CO, Lin is hard to use due to her weak CO radius. Don't fret
+though, as the boost affects all ground units, and they are the most important.
+You may want to treat Lin's unit as a solo powerhouse: go beserk and hit lots
+of stuff, then return with (hopefully) a larger CO Zone. Her CO Power is quite
+weak, but the boosts are strong and can prove decisive. Mostly though, you will
+want to hang on to the increased Zone.
+
+
+
+Catleia/Isabella
+An amnesiac girl who remebers nothing, except for pretty much every single
+military secret on the planet. She develops a strong friendship with Ed, and is
+probably the one person who's wishes Ed fights for: peace. You don't play as
+her in the main story mode for unknown reasons.
+CO Zone Radius: 2, boosts All Units by 10%/10%.
+CO Power: Overlord/Deep Strike. Increases indirect attack range by 2, and all
+mobility by 2.
+
+The boosts may only be minor, but Catleia is definitely a top-tier CO, if only
+for the awesome CO Power. Overlord grants battlefield opportunites that some
+COs in AW:DS would have died for. Use enhanced range to pummel forces from afar,
+have directs move at lightning speed for vital kills. And of course, having
+14 RANGE BATTLESHIPS. Has an unusually peaceful soundtrack too.
+
+
+
+Zadia/Tasha
+Flight Lieutenant of the Zephyrian/Lazurian army. She fights solely to avenge
+the death of his brother Johnathon, who was executed by Sigismundo and the New
+Laurentian/Rubinelle Army. Later on she would join the 12th Independant Legion
+to fight the NLA.
+CO Zone Radius: 1, boosts Aerial units by 40%/20%.
+CO Power: Fox One/Sonic Boom. Increases Aerial unit mobility by 2.
+
+Zadia is extremely difficult to use, however the pay-off can be lethal. Like
+Lin, you can try to exploit the CO unit and mercilessly blow up stuff (which
+with a 170% Attck stat isn't very hard). But Air units seem to play a weaker
+role in battle with cheap, improved countermeasures. You may actually want to
+put her in a Tank and take the fight to the ground. Then have the air force
+ready to unleash Fox One. 11-range Interceptors and 9-range Bombers simply
+annahilating everything in their path: priceless.
+
+Unlocked by defeating Mission 12: History Of Hatred/History Of Hate.
+
+
+
+Trak/Gage
+Zephyrian army soldier, with ice blue hair and sniper rifle for the win. He
+brings back memories of Hawke with his quiet and serious persona. He does what
+is necessary, and that is enough to keep him happy.
+CO Zone Radius: 2, Increases naval units and indirects by 20%/10%.
+CO Power: Long Barrel/Longshot. Increases indirect range by 2.
+
+Pretty basic CO, but gains plus points for coolness. Although his indirects
+have increased power, range is only boosted during Long Barrel, so don't think
+of him as the new Grit. His major boon, aside from the CO Power, is his naval
+game. Trak in a Battleship; great fun. His directs are a little un-boosted, so
+watch for people forcing a change in your tactics.
+
+Unlocked by defeating Mission 13: Rearguard Action/Greyfield Strikes.
+
+
+
+Carter/Forsythe
+Current leader of the Zephyrian Army. A veteran with honour and morals, Carter
+is comparable to O'Brian. He sticks by his code of honour and dismisses the use
+of war-breaking devices made by Stolos. He is eventually executed at the hands
+of Sigismundo and Finn.
+CO Zone Radius: 5! Increases all units by 10%/10%.
+CO Power: He doesn't have one. That means the radius doesn't get any bigger.
+
+Carter is simple to use and extremely effective. A massive CO Zone is offset by
+the lack of a CO Power to turn the tables. Minor boosts to a lot of units means
+that Carter can strike hard using lots of units, rather than a single power-hit
+with Lin or Zadia. Easily a high-tier CO.
+
+Unlocked by defeating Mission 14: A Hero's Farewell.
+
+
+
+Finn/Waylon
+Captain in the 13th Airborne division of the Laurentan Army, later transferred
+to the New Laurentian Army. As Finn, he is vain and seeks only to fulfill his
+desires. As his US persona Waylon, he also gets some of the more memorable
+quotes in the game. His whereabouts at the end of the game are unknown...
+CO Zone Radius: 2, boosts aerial units by 20%/30%.
+CO Power: Bad Company/Wingman. Increases aerial defense by 250%.
+
+A more user-friendly variation of the aerial specialist. His defensive boost is
+severe enough to deter attempts to attack his CO unit using like units. Unlike
+Zadia, Finn is best in the air blowing stuff up. Use Bad Company to basically
+reduce damage by +75% and blast into enemy territory with less fear. Be aware
+that you can only attack for that turn. Afterwards, you are vulnerable to
+attack.
+
+Unlocked by defeating Mission 20: Counter-Attack/Waylon Flies Again.
+
+
+
+Sigismundo/Greyfield
+Admiral and supreme leader of the New Laurentian Army. He wants to destroy
+anyone who stands in the path of his route to becoming ruler of the Earth. He
+sees the meteor strike as a mere 'test' for the strong, and is seen by a few
+fans as the most evil character in the game. He is eventually executed by Lin,
+avenging the death of O'Brian (although with his bodily bulk, I'm surprised Lin
+didn't use a harpoon to bring down the fat walrus).
+CO Zone Radius: 3, boosts Heli's, Ship Planes and naval units by 10%/40%.
+CO Power: High Command/Supply Chain. restores fuel ammo AND materials.
+
+He's awkward to use, but Sigismundo has an ace on every battlefield. On ground
+battles, he can have powerhouse units keep moving by restoring ammo at crucial
+times. In Aerial battles, his Battle Heli's are incredibly stubborn to erase.
+He truly shines in naval battles, though. His navy is almost untouchable, so
+prioritising his CO Unit in a naval battle is even more important. Human
+players tend to leave behind loads of temporary structures on the field with
+Mobile Workshops getting their materials back.
+
+Unlocked by defeating Mission 21: Countdown/Lin's Gambit.
+
+
+
+Lili/Penny
+Youngest child of Stolos, Lili is quite mental. Numerous experiments have
+shattered her mind permanently. She is more memorable in AW:DOR where she
+seems to be a collaborative mind of her and her teddy bear. She survives the
+storyline after being 'rescued' from the IDS Pulsatrix/Great Owl mega-bomber by
+Catleia.
+CO Zone Radius: 3, no boosts though. All units are unaffected by weather.
+CO Power: Enigma/Stormfront. Randomly changes weather conditions for 3 days.
+
+Lili revolves solely around her CO Power. Without it, she is outgunned even by
+Zadia. The weather changes to either Snow, Rain or Sandstorm for three turns
+incuding the turn it is triggered. Snow reduces mobility by 1, allowing Lili to
+range-dodge more effectively. Rain reduces enemy vision to 1 and blinds base
+vision (even Lili's bases). Sandstorm forces the enemy to lose 30% attack power
+and is extremely useful. With the duration of the weather, Lili can even chain
+CO Powers back-to-back, making her almost unstoppable in the right hands. Also
+has the most unusual theme tune in almost any game.
+
+Unlocked by defeating Mission 24: Inside Pulsatrix/Crash Landing.
+
+
+
+Larissa/Tabitha
+Oldest daughter of Stolos, Larissa has, quite easily, the most unusual dress
+code for almost any computer game character. Supposedly cruel and harbors a
+hatred of weak people (especially as Tabitha in AW:DOR, where she is also quite
+rude), she loyally follows her fathers footsteps. She hosts some of the best
+Tactics talks in story mode, where she tries to get Ed to be her servant for
+life. She is still alive at the end of the story, but her whereabouts are
+unknown...
+CO Zone Radius: ZERO. Boosts all units by 50%/50%.
+CO Power: Apocalypse/Firestorm. Launches a fireball at the most expensive area
+of enemy units. Damages units for 8HP.
+
+Loads of forums out there have topics debating whether this CO is actually in
+the Broken tier, alongside her father Stolos. All I can say to the contrary is
+that her usefulness reflects the capability of the player controllong her. It
+is extremely difficult to use Larissa considering her Zone only affects her
+unit from the off. But the boosts are incredible, and bends the rulebook in her
+favour on most occasions. When facing her, HER UNIT IS THE PRIORITY. If she
+gets her meter to 50% full, she will gain momentum very fast and launch her
+CO Power, basically winning the battle for her. Her main weakness is that until
+then, the rest of her army is bland. So prioritise her unit while using your
+own CO Zone to nullify her supporting army.
+
+Unlocked by defeating Mission 25: Final Experiment/Lab Rats.
+
+
+
+Stolos/Caulder
+Head of the private military company Intelligent Defense Systems, IDS. He has
+a unique fascination with death, and has conducted many inhumane experiments in
+his life. He is actually the only remaining clone of the original Stolos: he
+cloned himself many times, but the clones started fighting each other. What we
+see here is the sole survivor. He also created the dreaded Floral Virus/Creeper
+and he also cloned Larissa, Lili, Catleia (known as Lutia) and a younger
+pacifist brother named Cyrus. He is killed in the wreckage of the Owl's Nest,
+his main base of operations.
+CO Zone Radius: 3. Boosts all units by 50%/50%, and heals for 5HP each turn.
+CO Power: He doesn't need one. He's powerful enough with those boosts.
+
+THE Broken CO in the game, Stolos outguns everybody. If you face him, you will
+almost certainly get mowed down. I don't need to say much about Stolos: he is
+banned from Wi-Fi play, and players mutually agree not to play as him.
+
+Unlocked by defeating Mission 26: Beam Of Light/Sunrise.
+
+*END SPOILER WARNING*
+
+
+
+05) Choke Point Central
+-----------------------
+To new players, look at some maps and find areas where the land forces the path
+of enemy units into a very narrow passage. This is known as a chokepoint, and
+it is critical to success. By simply parking a unit in the choke, you have made
+a wall against the enemy onslaught.
+
+Chokes are often blocked by expendable Infantry, but they will simply fuel a
+good player's CO Meter in my experience. You will want to block the choke using
+heavy armour (you CAN get away with a Tank, but heavier armour is advised) to
+make it hard for the enemy to press on. They may be expensive, but they are
+much more useful and stubborn to wipe out, especially on harsh terrain. Try to
+place the blocker unit on defensive cover (especially Woods, even moreso in Fog
+of War) to further boost the defense. Be aware that this defense will go down
+if the unit has sustained ANY damage.
+
+The reason why people keep saying how chokepoints can turn the battle around is
+because indirect units thrive on chokes. Guard the area in front of the blocker
+unit with a simple Mech Gun, and you can force the enemy to back off, giving
+you some breathing space.
+
+Countering an enemy's stranglehold on a choke can be tricky, and downright evil
+on ground-only maps. You will want to knock down the enemy blocker unit, but
+you need indirects of your own to do this (or face getting smashed by the enemy
+indirect). The best unit to use is the Rocket unit. Providing they don't have
+one, simply out-ranging the enemy can give you the edge (and a well-deserved
+punch in the face in non-Wi-Fi matches). In Ground-Aerial battles, chokes
+are MUCH less effective as Battle Heli's and Bombers can navigate around the
+blocking units to get a power-hit on the indirects.
+
+
+
+06) How To Beat Various Map Types
+---------------------------------
+Loads of different maps lie in this game (and on the Internet), and some types
+require unique approaches.
+
+Ground-only battles are simple, all-out affairs. Be extremely wary of chokes,
+as it can be almost impossible to beat one without a CO Power. In wide spaces,
+COs such as Ed and Catleia with their CO Powers have a distinct advantage.
+
+Ground-Aerial battles are great fun. Depending on how many chokes the map has,
+you can have lots of dogfighting in a few turns. Chokes are much weaker here
+than before, so have a good air force around: it'll prove vital to success. The
+aerial specialists can have a good chance for victory here.
+
+Ground-Naval battles can get tricky. Ground units have almost nothing to hit
+the navy with, so take the fight to the seas with Battleships (with Cruiser
+escort, obviously), Submarines and Carriers. Carriers allow for aerial battles
+even if there are no airports; build Temporary structures at will to allow the
+Ship Planes to work alongside your ground invasion. The navy specialists shine
+in these fights.
+
+Ground-Naval-Aerial battles are easily the hardest fights in the game. There
+are countless possibilities for strategies and methods of countering them, so
+my only advice is to understand and exploit each units advantages to the full.
+CO choice is tricky, my advice is to choose who you feel most comfortable with.
+
+Maps also are divided into two distinct types: Solo Mass levels (one island,
+sometimes linked to another half by Bridges) and Island maps (many different
+islands to fight over). The sole type players should NOT fight on are G-A
+fights on Island maps (Triangles and Devil's Inlet). Those maps always end up
+as stalemates.
+
+Island maps are hardest of the two, since you will need lots of Landers to make
+an effective landfall, and protection for them too. The best plan is to
+determine what you need to send into the enemy domain, and organise your
+Landers and where they will drop off your army. You will want to land as many
+units as possible on ONE turn: if you drop few units, you will lose them, it's
+that simple. Its also advised to lay covering fire for these units, use aerial
+units and Battleships to lay a solid foothold on the ground so you can move on
+with minimal resistance. If there are properties, ensure you have some Infantry
+in the landing squad so you can secure extra funds, as well as a repair area
+for the ground troops.
+
+There are loads more map types out there, and I can only summarise the general
+types you will find. However, there are some odd types of maps out there, and
+you can generally find these on the 'Advance Wars By Web' website. A fan's
+attempt at creating an online variation of AW:DS, it also harbors pretty much
+THE biggest map archive on the internet. However, you'll have to copy them to
+your game manually, and you may also have to adapt them to fit the new game's
+tiles (ie you can't use pipelines and units exclusive to AW:DS). But once you
+get good at adapting maps from here, you can essentially multiply the
+replayability of the game by a limitless amount!
+
+============
+3. THE UNITS
+============
+
+I will list critical details about units, such as pricing, movement range/type,
+power, as well as information about how (or if) the unit has changed from
+previous games, and US names (oddly, unit and CO names from AW:DC and AW:DOR
+are rather different. The language used in the storylines also vary a bit as
+well).
+
+# Armor applies to vehicles and determines its defensive capability. Armor
+  varies from SL (super light) through to SH (super heavy). Offensive units
+  will have their ability to take on various armor mentioned in the summary.
+
+# Cost is funding required to deploy the unit (if the price has changed, the
+  difference is stated).
+
+# Range is the maximum movement range of the unit. Remember that terrain limits
+  this in some cases.
+
+# Vision is the vision range of the unit in Fog of War conditions. No matter
+  how large this is, you can only see into hiding places when you are next to
+  them. Certain units can only hide in certain places, these cases will be
+  noted in the intro for each unit category.
+
+# Type is the movement type used by the unit. It dictates what the unit
+  can(not) traverse, and how quickly it can travel across it.
+
+# Fuel is the maximum number of spaces the unit can travel before it cannot
+  move any more. Remember that non-ground units burn fuel automatically each
+  day. If the counter reaches 0, the unit either becomes immobile or falls out
+  of the sky/sinks into the sea.
+
+# Primary Weapon is the units main weapon (if it has one). Ammo for the weapon
+  is in brackets. If the primary weapon runs out of ammo, the unit can only
+  attack with the secondary weapon (if it even has one). Certain targets can
+  only be hit using the Primary Weapon (usually applies to attacks against
+  Naval units by Tanks).
+
+# Attack Range applies to indirect units, and states how far the attacks of the
+  unit can reach.
+
+# Secondary Weapon is the units backup weapon, if it has one. These have
+  infinite ammunition, but are less effective than primary weapons. They are
+  sometimes used against specific units (usually Infantry and Helicopters).
+
+# Material is sometimes equipped with units. These can be used to build stuff,
+  but materials cannot be resupplied (excluding Sigismundo's CO Power High
+  Command) so another unit is needed to gain more materials.
+
+# Attacks Used shows which weapon(s) are used in attacks against certain units.
+  Specific units can only be harmed by either Primary or Secondary weapons.
+  Primary Weapons will always be used over Secondary Weapons unless there is no
+  ammo for the Primary Weapon.
+
+# Positives is a list of good things about the unit. All units have something
+  going for them, exploiting these points to their maximum is one of the many
+  keys to success in the game.
+
+# Negatives is a list of bad things about the unit. Take these into account
+  when choosing between different units to deploy.
+
+# My Two Cents is my personal opinion of the unit, an in-depth description of
+  how the unit can be used to their full, and sometimes mentions how the unit
+  can be countered.
+
+# Takedown is the suggested method of eliminating the unit with minimal
+  trouble. This term 'Takedown' is the art of destroying enemy units in one
+  attack.
+
+# CPR is Command Post Recommendation. This lists whether the unit is useful as
+  a CO Unit, and it tends to mention what units the CO Unit can now
+  cripple/takedown.
+
+# AI Posts is a list of which COs will board this unit when controlled by the
+  AI. Useful this; if you see the computer build one, try to hit it for at
+  least 3HP damage. If you can, you can prevent the CO from wanting to board
+  it. Due to certain COs only wanting to board the more expensive units, even
+  top-tier COs controlled by the AI can be easily beaten.
+
+# E-3-2-1 is the system that I use to summarise what the unit is effective
+  against and vulnerable to. For each of these four tags, there is a list of
+  unit abbreviations.
+
+E - Units that this unit is effective against. With a few exceptions,
+    'efffective' attacks deal at least 4 HP of damage.
+3 - Units that can take down this unit in two or three attacks. These units can
+    face off against the defender and usually get 'even damage' (attacker loses
+    2, enemy loses 4-5)
+2 - Units that can score heavy damage on this unit. Users should watch out for
+    these. When softened up slightly, there is the risk of a KO.
+1 - Units that can potentially one-hit-KO the unit. Stay away at all costs!
+
+For American readers, I will use the EU names for each CO. Beats having to
+write (EU Name/US Name) all the time. The listing is as follows:-
+
+   EU Name <-> US Name
+========================
+        Ed <-> Will
+   O'Brian <-> Brenner
+       Lin <-> Lin
+   Catleia <-> Isabella
+     Zadia <-> Tasha
+      Trak <-> Gage
+    Carter <-> Forsythe
+      Finn <-> Waylon
+Sigismundo <-> Greyfield
+      Lili <-> Penny
+   Larissa <-> Tabitha
+    Stolos <-> Caulder
+
+I should also mention what the Yellow/Red Danger symbols on the units data
+screen mean (I haven't listed them because the E-3-2-1 system works better in
+my opinion). Units in the Yellow category deal +70% damage to the unit, and Red
+category units deal +90% damage. In essence, it's a summary sheet of what units
+can cause collateral damage to the target.
+
+A) GROUND UNITS
+---------------
+
+Ground units do not burn fuel on a daily basis like the other units. If these
+units run out of fuel they are stranded until they gain fuel via a CO Power or
+Mobile Workshop or joining with another unit which has fuel.
+
+Ground unit hiding places include Ruins, Woods, and any Base that does not
+belong to the enemy. Even if you park on another enemys base (in 3-4 way
+brawls), it is only visible to that player.
+
+
+
+01) Infantry
+
+Previously...
+-------------
+Cost: 1000
+Range: 3
+Vision: 2
+Type: Foot
+Fuel: 99
+
+Currently...
+------------
+Cost: +500 (1500)
+Range: 3
+Vision: 2
+Type: Inftry
+Fuel: 99
+Primary Weapon: None (0)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Anti Tank, Trans. Heli.
+3 - Infantry
+2 - Bazooka, Motorbike, Recon, Flare, Tank, Anti Tank, Battleship, Fighter,
+    Battle Heli.
+1 - Anti-Air, Heavy Tank, Mega Tank, Mech Gun, Rockets, Bomber, Ship Plane
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry|---| Y
+Ground|---| Y
+Aerial|---| n
+Heli's|---| Y
+Ships |---| n
+Subs  |---| n
+
+Positives
+---------
+Cheapest unit (costs more than it used to, though).
+Can capture bases.
+Effective against other soldiers.
+Fastest soldier across difficult terrain.
+Vision increases by 3 when on a mountain.
+Effective against Anti-Tanks.
+
+Negatives
+---------
+Pose little threat to armor.
+Does negligable damage to non-infantry units (except Transport Helicopters).
+
+My Two Cents
+------------
+Infantry units form the core of pretty much any army. You need these units to
+capture bases to help secure funds for those more decisive units, and you need
+them to launch missile silos as well.
+
+On the battlefield, Infantry are pretty much cannon fodder. They are only good
+against other Infantry units. They suffer slightly against the more advanced
+Infantry (Bazooka and Motorbikes). They can be used as a cheap 'meatshield' for
+your indirects as well. They also work as an effective anti-Anti-Tank unit, as
+it deals the same damage to it as the more expensive Light Tank.
+
+Takedown
+--------
+Loads of stuff can KO infantry, but sweeping them away in one attack can prove
+tricky, especially if it is parked on heavy terrain. AAs, Mega Tanks, and
+Bombers can nail the elusive OHKO, but they need to be at Level 2 before you
+can try for a takedown in the more restrictive areas.
+
+CPR
+---
+Not really. With the exception of a few Trial maps and super-small maps, it is
+inadvisable to put your CO aboard one (unless you prioritise the CO Zone over a
+CO unit).
+
+AI Posts
+--------
+Nobody. Not really surprising when you think about it.
+
+
+
+02) Bazooka (US Name: Mech)
+
+Previously...
+-------------
+Name: Mech(anized Infantry)
+Cost: 3000
+Range: 2
+Vision: 2
+Type: Mech
+Fuel: 70
+
+Currently...
+------------
+Cost: -500 (2500)
+Range: 2
+Vision: 2
+Type: Bzka
+Fuel: 70
+Primary Weapon: Bazooka (3)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Recon, Flare, Anti-Air, Tank, Anti Tank,
+    Mech Gun, Rockets, Missiles, Mobile Workshop, Trans. Heli.
+3 - Infantry, Bazooka, Motorbike, Fighter
+2 - Recon, Flare, Tank, Heavy Tank, Mech Gun, Anti Tank, Rockets, Battleship,
+    Bomber, Battle Heli., Ship Plane
+1 - Anti-Air, Mega Tank
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n | Y
+Ground| Y | Y
+Aerial| n | n
+Heli's| n | Y
+Ships | n | n
+Subs  | n | n
+
+Positives
+---------
+Strongest infantry unit.
+Capable of taking on light armor.
+Can capture bases.
+Fastest soldier across mountains.
+Vision increases by 3 when on mountains.
+Most powerful ground direct vs Anti-Tanks.
+Cheaper than in previous games.
+
+Negatives
+---------
+Slowest unit in the game.
+Generally incapable of counterattacking well.
+
+My Two Cents
+------------
+Mech units have remained largely unchanged. Their biggest boon is the reduced
+cost from previous games, which allows for them to be spammed at will. Be aware
+that while Mech Spamming is still an effective tactic, it only works well
+against inexperienced players; veterans of the series can get past these with
+no problems.
+
+Offensively, Mech units are extremely good, but the 2 Mobility will ensure that
+it reaches its destination by next July unless you use transporters. The low
+mobility also puts it at immense risk of being hit first in an attack. It also
+has massive trouble with indirects. Other than that, if the Mech attacks, the
+target will be in some severe pain. It also has the distinction of being the
+most effective ground direct unit against Anti-Tanks (but the range makes it
+vulnerable on the approach, and experienced players will not allow you to
+connect the attack).
+
+Takedown
+--------
+Oh god. Taking them out is easy, taking them out in one hit can prove a
+daunting task, even for the AA and the Mega Tank. Fortunately, you have an ace
+in the form of Bombers and ranged attacks. These units cannot move through the
+range of an indirect unless it is Fog of War. Nonetheless, it is more resiliant
+to damage than the standard Infantry, and that makes takedowns difficult.
+Hitting them for less than 8HP damage is inadvisable as the counterattack
+damage from the Bazooka's, well, Bazooka will eventually make your powerhouse
+units ineffective over a period of time.
+
+CPR
+---
+Unless your CO is Stolos (b*****d) and you're gunning for the HQ capture, it's
+not a good idea. Mainly due to being so damn slow.
+
+AI Posts
+--------
+Nobody.
+
+
+
+03) Motorbike (US Name: Bike)
+
+An All New Unit.
+
+Currently...
+------------
+Cost: 2500
+Range: 5
+Type: Tire B
+Fuel: 70
+Primary Weapon: None (0)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Anti Tank, Rockets, Missiles, Trans. Heli.
+3 - Infantry, Bazooka, Motorbike, Fighter
+2 - Recon, Flare, Tank, Heavy Tank, Mech Gun, Anti Tank, Rockets, Battleship,
+    Bomber, Battle Heli., Ship Plane
+1 - Anti-Air, Mega Tank
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry|---| Y
+Ground|---| Y
+Aerial|---| n
+Heli's|---| Y
+Ships |---| n
+Subs  |---| n
+
+Positives
+---------
+Fastest soldier across light terrain.
+Can capture bases.
+Large movement range allows for long-range capture without transport.
+Particularly effective as a cheap anti-infantry unit.
+Effective against Anti-Tanks.
+
+Negatives
+---------
+Completely harmless against armor.
+Cannot board Transporters (excluding Landers).
+Agility is ruined by heavy terrain.
+Cannot traverse mountains.
+
+My Two Cents
+------------
+As soon as the Motorbike was announced for this game, players all over were
+saying that they would never need Infantry units ever again. Now its here, it
+doesn't quite live up to its hype. It has 5 mobility, so it can reach long
+range properties faster and cheaper than an Infantry-APC combo. However, it has
+move type Tire B, so it is terrible in woods, and cannot move across mountains.
+Also take into account how quickly various Infantry type units can reach their
+targets. In rare cases, Infantry can reach them just as fast as Motorbikes.
+
+In battle, Motorbikes act as nimble Mech units minus the Bazooka. Possessing
+superior defense and speed than the Infantry, these act as a more dependable
+form of 'meatshield'. At Ace/Vet level, Motorbikes can act as a point defense
+unit against Infantry units flying over to your HQ from a Transport Helicopter.
+It is also the sworn enemy of Anti-Tanks, being capable of sitting well out of
+its attack range and dealing solid damage on the offensive. All in all, a good
+unit to have on your side, just remember that Infantry have their uses as well.
+
+Takedown
+--------
+The same rules apply for the Motorbike as the Bazooka, but the Motorbike has it
+harder because it is unlikely to lie in harsh terrain due to its move type.
+Plus, the lack of a Bazooka means that it cannot score solid counterattack
+damage on most occasions.
+
+CPR
+---
+Okay choice for an inexpensive posting. Its mobility allows for local spreading
+of the CO Zone, and you can gun down enemy Infantry without much hassle.
+
+AI Posts
+--------
+Nobody.
+
+
+
+04) Recon
+
+Previously...
+-------------
+Cost: 4000
+Range: 8
+Vision: 5
+Type: Tire
+Fuel: 80
+
+Currently...
+------------
+Armor: SL
+Cost: 4000
+Range: 8
+Vision: 5
+Type: Tire A
+Fuel: 80
+Primary Weapon: None (0)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Mech Gun, Rockets, Missiles, Mobile Workshop,
+    Trans. Heli.
+3 - Recon
+2 - Bazooka, Flare, Anti-Air, Tank, Mech Gun, Anti Tank, Battleship,
+    Battle Heli., Ship Plane
+1 - Heavy Tank, Mega Tank, Rockets, Bomber
+
+Positives
+---------
+Very high movement range (on super-light terrain).
+Large vision makes it essential in Fog of War.
+Effective against Infantry and Indirect units.
+
+Negatives
+---------
+Agility is destroyed by even light terrain.
+Ineffective against all armor excluding indirects.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry|---| Y
+Ground|---| Y
+Aerial|---| n
+Heli's|---| Y
+Ships |---| n
+Subs  |---| n
+
+My Two Cents
+------------
+They were designed for use in Fog of War, with a vision range of 5 it could
+spot incoming threats before they could see you. Now in this game, with loads
+more hiding places than before, it has a rival in the form of the Flare tank.
+Both have their advantages, the Recon's being beneficial in light terrain, as
+well as spotting air units (after all, they can't hide at all).
+
+On the battlefield, Recons act as cheap anti-Infantry units. If there are
+plenty of roads to help this Tire A type unit across to the enemy, it also
+works to disturb the enemys early-game equilibrium and slow down their rate of
+capture. Other than these points, they can annoy enemy indirects, although you
+shouldn't expect a KO.
+
+Takedown
+--------
+If it causes an explosion, it stands a chance at taking this unit down in one
+hit when at Ace/Vet level. Recons have the notorious ability to be flattened by
+even Bazooka units. At Level 0, Mega Tanks and Bombers can sweep these away.
+
+CPR
+---
+You can do worse, but this isn't too good an idea. If there are many roads, it
+is excellent for moving the CO Zone about, but you're stuck to hitting Infantry
+and enemy Indirects for the most part.
+
+AI Posts
+--------
+Nobody.
+
+
+
+05) Flare
+
+An All New Unit.
+
+Currently...
+------------
+Armor: SL
+Cost: 5000
+Range: 5
+Vision: 2
+Type: Tank
+Fuel: 60
+Primary Weapon: Flare Rocket (3)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Recon, Flare, Anti-Air, Mech Gun, Rockets,
+    Missiles, Mobile Workshop, Trans. Heli.
+3 - Recon, Flare, Anti-Air
+2 - Bazooka, Tank, Mech Gun, Anti Tank, Rockets, Battleship, Battle Heli.,
+    Ship Plane
+1 - Heavy Tank, Mega Tank, Bomber
+
+Positives
+---------
+Flares allow you to spot enemies nearby, even if they are in Woods, etc.
+Effective against infantry and SL armor.
+
+Negatives
+---------
+Rather vulnerable to attack.
+Flares have limited coverage and range, and the viewed area goes dark at the
+end of the turn.
+Uselfulness drops massively outside of Fog of War.
+Slightly lacking in speed.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry|---| Y
+Ground|---| Y
+Aerial|---| n
+Heli's|---| Y
+Ships |---| n
+Subs  |---| n
+
+My Two Cents
+------------
+This new addition to the roster is rather interesting in practice. To fire a
+Flare Rocket, don't move the Flare and you get the option to fire the flare up
+to five squares away. The actual flare illuminates a 13-square area of land,
+including hiding places. In levels with lots of woods, it is probably advisable
+to prioritise building Flares over Recons. Flares reveal units hidden in any
+hiding place, but they will not reveal submerged Submarines.
+
+Outside of Fog of War, this unit has a few things over the slightly cheaper
+Recon unit. Firstly, it runs on tracks, so if the terrain is plains-heavy, this
+unit outmaneouvres the Recon. Secondly, it is 'slightly' more powerful than the
+Recon against Infantry. Most importantly, however, it can tear apart enemy
+Recons, as well as break even against Anti-Air units.
+
+Takedown
+--------
+The major difference between the attack and defense abilities of this and the
+Recon is that the Flare has more attack power. Thus, it can be stomped on in
+the same manner.
+
+CPR
+---
+At this price range, it would usually be wise to save up for a CO Tank, or fall
+back on a CO Recon or Motorbike. It may be more useful than the Recon, but its
+not too fast and is torn apart by explosive weaponry.
+
+AI Posts
+--------
+Nobody.
+
+
+
+06) Anti-Air
+
+Previously...
+-------------
+Cost: 8000
+Range: 6
+Vision: 2
+Type: Tracks
+Fuel: 60
+Primary Weapon: Vulcan Cannon (9)
+Secondary Weapon: None
+
+Currently...
+------------
+Armor: L
+Cost: -1000 (7000)
+Range: 6
+Vision: 2
+Type: Tank
+Fuel: 60
+Primary Weapon: Vulcan Cannon (-3, 6)
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Recon, Flare, Anti-Air, Mech Gun, Rockets,
+    Missiles, Mobile Workshop, Interceptor, Bomber, Fighter, Battle Heli.,
+    Trans. Heli., Ship Plane
+3 - Flare, Anti-Air, Ship Plane
+2 - Bazooka, Tank, Heavy Tank, Mech Gun, Anti Tank, Rockets, Battleship, Bomber
+1 - Mega Tank
+
+Positives
+---------
+Devastates helicopters.
+Causes massive damage to planes.
+Obliterates infantry.
+Deals good damage to L armor.
+
+Negatives
+---------
+Defenseless against heavy armor.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| Y |---
+Heli's| Y |---
+Ships | n |---
+Subs  | n |---
+
+My Two Cents
+------------
+THE primary counter to an aerial assault. This unit turns choppers into Swiss
+Cheese, and tears apart planes as well. The single aerial unit the AA needs to
+watch for is the Bomber, which isn't afraid to flatten the AA unit. You can
+discourage this by having AA units travel in pairs. The backup can make an
+enemy attack extremely cost-ineffective.
+
+Apart from this, the AA unit is extremely stubborn in a ground battle as well.
+Its the single most cost-effective counter against swarms of Infantry, and it
+can also hurt indirects very well. Just watch out for Tanks, though.
+
+Takedown
+--------
+Although this thing will fall at the hands of Tanks, it takes a Mega Tank or
+Ace/Vet Heavy Tank to knock them down in a single hit. Don't attack these with
+Bazooka units unless it is the finishing attack, otherwise the counterattack
+will hurt a bit.
+
+CPR
+---
+Introducing the CO powered AA, the latest technology in bug extermination. Have
+your CO board an AA unit, and you'll have Infantry flying about in diverse
+directions, and be KO'ing Fighters in one attack, and crippling anything else
+that's airborne. A fun post no doubt. You'll just have to rely on the CO Zone
+to bring down those damn Tanks.
+
+AI Posts
+--------
+Nobody. That's a good thing, though.
+
+
+
+07) Tank
+
+Previously...
+-------------
+Cost: 7000
+Range: 6
+Vision: 3
+Type: Tracks
+Fuel: 70
+Primary Weapon: Cannon (9)
+Secondary Weapon: Machine Gun
+
+Currently...
+------------
+Armor: M
+Cost: 7000
+Range: 6
+Vision: 3
+Type: Tank
+Fuel: 70
+Primary Weapon: Tank Gun (-3, 6)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Recon, Flare, Anti-Air, Tank, Mech Gun,
+    Rockets, Missiles, Mobile Workshop, Missile Boat, Trans. Heli.
+3 - Bazooka, Tank
+2 - Heavy Tank, Mega Tank, Mech Gun, Anti Tank, Rockets, Battleship,
+    Battle Heli., Ship Plane
+1 - Bomber
+
+Positives
+---------
+All-around good ground unit.
+Effective against infantry and L armor.
+High agility.
+Relatively inexpensive.
+
+Negatives
+---------
+Helpless against aerial attacks and heavy armor.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n | Y
+Ground| Y | Y
+Aerial| n | n
+Heli's| n | Y
+Ships | Y | n
+Subs  | Y | n
+
+My Two Cents
+------------
+Always a staple unit, and easy to use. Not much to say, they are effective at
+what they do; blow stuff up. They have superior mobility to their more powerful
+cousins, and can therefore be used to great effect in breaking a ground
+stalemate by forcing the enemy to make a move.
+
+However, you would be hoping the Tank had even more power in some cases. It's
+completely helpless against Mega Tanks and Anti-Tanks. It can do okay damage to
+Heavy Tanks, but the Tank must strike first, and the target must be out in the
+open for the trade-off to be worthy.
+
+Takedown
+--------
+Only the Bomber and a boosted Mega Tank can get the one-shot here. Anti-Tanks
+will work, but the problem with the Anti-Tank is that it's usefulness shines
+only at chokepoints. Their move-or-shoot behaviour makes it ineffective in open
+terrain as they will just back off and attack your other units. Choppers work
+too.
+
+CPR
+---
+Most people say that there are only two decent CO Posts, the Light Tank, and
+the Fighter/Duster. For the most part, they are correct: A CO Tank can
+generally score takedowns on unarmoured ground units. It's pretty fast, and
+solid all-around, and can take on bland Heavy Tanks. No faults here.
+
+AI Posts
+--------
+Lots of them; Ed, O'Brian, Catleia, Carter, Lili, and Stolos. Get used to
+countering CO Tanks, they show up a LOT.
+
+
+
+08) Heavy Tank (US Name: Medium Tank)
+
+Previously...
+-------------
+Name: Md. Tank
+Cost: 16000
+Range: 5
+Vision: 1
+Type: Tracks
+Fuel: 50
+Primary Weapon: Cannon (8)
+Secondary Weapon: Machine Gun
+
+Currently...
+------------
+Armor: H
+Cost: -4000 (12000)
+Range: 5
+Vision: +1 (2)
+Type: Tank
+Fuel: 50
+Primary Weapon: Heavy Tank Gun (-3, 5)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Recon, Flare, Anti-Air, Tank, Heavy Tank,
+    Mech Gun, Rockets, Missiles, Mobile Workshop, Missile Boat, Trans. Heli.
+3 - Tank, Heavy Tank, Battle Heli., Battleship
+2 - Mega Tank, Mech Gun, Anti Tank, Rockets, Ship Plane
+1 - Bomber
+
+Positives
+---------
+More difficult to destroy than regular tanks.
+Bigger cannon results in solid damage against M armor.
+Better against infantry than regular tanks.
+
+Negatives
+---------
+Somewhat less durable than before.
+Slower than regular tanks.
+Still helpless against aerial attacks.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n | Y
+Ground| Y | Y
+Aerial| n | n
+Heli's| n | Y
+Ships | Y | n
+Subs  | Y | n
+
+My Two Cents
+------------
+In comparision to its previous forms in older AW games, the Heavy Tank is a
+shadow of its former glory, especially in terms of defense. Not to worry,
+though. The price went down, and that makes this unit better than ever. Its
+mobility is slightly weaker than the Light Tank, but this will only cause major
+annoyances in heavy terrain. With the lower cost, its even possible to spam the
+Heavy Tank.
+
+It has enough attack power to make most ground units cringe, and turn Recons
+into scrap in one attack. At Ace/Vet level, it becomes the best of the ground
+units. Be aware that until then, don't get hit by indirects and Anti-Tanks, and
+get the first strike on any enemy Mega-Tanks.
+
+Takedown
+--------
+Bombers can flatten them in a single bound. Other than this, you'll need some
+heavy armour of your own to nullify the threat of these tracked menaces. As
+before, you can use Anti-Tanks against them, but only in those damn
+chokepoints. You can also try just throwing everything you have at it.
+Eventually the Heavy Tank will fall, or limp away with little health left.
+Battle Heli's can also cause them some annoyances, but it'll be a bit of a
+struggle, and a good player will always have an AA on standby.
+
+CPR
+---
+For 18000, a CO Heavy Tank is rather costly, but also ridiculously effective
+at tearing things to shreds, including Light Tanks. If you are looking for a
+powerhouse, this is probably your best bet.
+
+AI Posts
+--------
+The same as for the Light Tank.
+
+
+
+09) Mega Tank (US Name: War Wank)
+
+Previously...
+-------------
+Cost: 28000
+Range: 4
+Vision: 1
+Type: Tracks
+Fuel: 50
+Primary Weapon: Mega-Cannon (3)
+Secondary Weapon: Machine Gun
+
+Currently...
+------------
+Armor: SH
+Cost: -12000 (16000)
+Range: 4
+Vision: +1 (2)
+Type: Tank
+Fuel: 50
+Primary Weapon: Mega Tank Gun (+2, 5)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - All Ground Units, Missile Boat, Battle Heli., Trans. Heli.
+3 - Heavy Tank, Mega Tank, Mech Gun, Battle Heli., Rockets, Battleship,
+    Ship Plane
+2 - Anti Tank, Bomber
+1 - N/A
+
+Positives
+---------
+Strongest tank unit.
+Massive attack power.
+Easy to level up.
+Not as vulnerable to Battle Helicopters as its lesser cousins.
+
+Negatives
+---------
+It's nothing like the Megatank from AW:DS. It's comparable to the previous
+Md. Tank, actually.
+The armor is not as strong as you would expect.
+Lacking in mobility.
+Vulnerable to swarming attacks.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n | Y
+Ground| Y | Y
+Aerial| n | n
+Heli's| n | Y
+Ships | Y | n
+Subs  | Y | n
+
+My Two Cents
+------------
+This unit is nothing like you would expect. The large attack power is always
+handy, but the armor is rather weak for something that looks like a solid block
+of steel. Most often used as a CO command post by AI players when they aren't
+busy in Fighters. Irrespective of these points, the Mega Tank is excellent at
+holding key properties, and is nowhere near as terrible as people keep saying
+about it.
+
+The biggest criticism of the Mega-Tank is the paltry movement range. However,
+on small maps this isn't a problem at all, and on larger maps, you would
+usually have factories close to the front lines anyways. The main threat to
+Mega-Tanks are indirect attacks and some air units, but not Battle Helicopters
+(unless it has Zadia at the helm). This unit fares well against choppers, and
+providing it gets a first strike, it also goes well versus Anti-Tank units.
+Overall, it should be saved for area defense, and late pushes for victory.
+
+Takedown
+--------
+A one-hit takedown requires an Ace/Vet Bomber and a lot of luck. Mega Tanks
+have lots of trouble with Rockets, being incapable of playing a game of
+range-dodging with them (because they can't move through for the KO in one turn
+like Heavy Tanks). Exploit this and slam some Rockets into a chokepoint
+alongside some heavy-duty 'persuaders' and watch them run. Battle Heli's won't
+work anymore, though. Anti-Tanks were designed to knock these fiends down, but
+don't leave them on roads EVER. A Mega Tank can do surprisingly good damage to
+Anti-Tanks, especially when boosted.
+
+Whatever you do, don't let the enemy Ace/Vet a Mega Tank. This can prove
+difficult, however, as Mega Tanks tend to gun for your much more vulnerable
+units (Infantry, Recons) first rather than aim for a 'decent' attack, to
+quickly boost its abilities.
+
+CPR
+---
+The biggest fault of the CO Mega Tank is the 24K price tag. For that, though,
+you get an extremely powerful force that's also quite stubborn to knock out. If
+the attack boost reaches 150%, then you can knock out Bazooka units in one hit,
+even if they are in the mountains. Be aware that for an additional 1000 you
+could get the decisive Battleship (if there's a navy you can use, mind).
+
+AI Posts
+--------
+Same as before, including Lin and Larissa. A Larissa Mega Tank can tear armies
+apart almost single handedly, keep that in mind when you face her as an AI
+player.
+
+
+
+10) Mech Gun (US Name: Artillery)
+
+Previously...
+-------------
+Name: Artillery
+Cost: 6000
+Range: 5
+Vision: 1
+Type: Tracks
+Fuel: 50
+Primary Weapon: Cannon (9)
+Attack Range: 2-3
+Secondary Weapon: None
+
+Currently...
+------------
+Armor: L
+Cost: 6000
+Range: 5
+Vision: +2 (3)
+Type: Tank
+Fuel: 50
+Primary Weapon: Cannon (-3, 6)
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - All Ground Units, All Naval Units
+3 - Recon, Flare, Anti-Air
+2 - Bazooka, Tank, Heavy Tank, Mech Gun, Anti Tank, Rockets, Battleship,
+    Battle Heli., Ship Plane
+1 - Mega Tank, Bomber
+
+Positives
+---------
+Cheapest indirect unit.
+Powerful against all attackable units.
+Can attack naval units.
+Decent defensive strength.
+Vision Range is high enough for it to fire in Fog of War without a Recon to
+help it spot targets.
+
+Negatives
+---------
+It cannot move and fire at the same time.
+Fairly short range.
+Cannot counterattack.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| n |---
+Heli's| n |---
+Ships | Y |---
+Subs  | Y |---
+
+My Two Cents
+------------
+Infinitely better than before, especially in Fog of War. A vision zone of 3
+means that the only way it cannot see where it is shooting is during a
+Trak-Catleia CO Power! Being an indirect unit it is incapable of self-defense,
+so guard it with any and all units at your disposal. Even 1HP Infantry have
+their uses, you know.
+
+Provided it is protected well, this unit can be decisive in taking an enemy
+Factory by softening up anything the enemy builds from it. The only weakness
+of this unit is the Rocket unit, which outclasses it in virtually every way
+(except mobility, Tire A movement is annoying).
+
+Takedown
+--------
+Mech Gun units are easy to knock out, but because the enemy will protect them
+with units and useful terrain, it can prove problematic especially in low-fund
+maps. Chokepoint effectiveness becomes minimal in maps with airports so
+sneaking a Battle Heli. in for a pot-shot can buy you enough time to push
+onwards. Aside from this, out-range them with superior Rockets and Battleships.
+
+CPR
+---
+I've not practiced with this type of CO Post, but I hear it's quite the beast.
+Having the defending units in the CO Zone is enormously useful (as long as you
+aren't using Larissa) for one. It is far from the most mobile CO Unit you'll
+ever see, though.
+
+AI Posts
+--------
+Nobody. Shame.
+
+
+
+11) Anti-Tank
+
+An All New Unit.
+
+Currently...
+------------
+Armor: SL (vs Infantry) H otherwise
+Cost: 11000
+Range: 4
+Vision: 2
+Type: Tire B
+Fuel: 50
+Primary Weapon: Cannon (6)
+Attack Range: 1-3
+Secondary Weapon: None.
+
+E-3-2-1
+-------
+E - All Ground Units, Battle Heli., T-C
+3 - Infantry, Motorbike, Tank, Heavy Tank, Mega Tank, Battleship, Ship Plane
+2 - Bazooka, Mech Gun, Anti Tank, Rockets, Bomber
+1 - N/A
+
+Positives
+---------
+Only indirect capable of counterattacking (also means there's no blind-spot).
+Massive defenses against most attacks.
+Extremely effective against vehicles.
+Somehow, it is effective against helicopters.
+
+Negatives
+---------
+It's not as effective against some ground units than other indirects.
+Cannot move and fire.
+It may need assistance in Fog of War to locate targets.
+Surprisingly vulnerable to Infantry units.
+Vulnerable to swarming attacks.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| n |---
+Heli's| Y |---
+Ships | n |---
+Subs  | n |---
+
+My Two Cents
+------------
+In a sentence, the Anti-Tank is probably the single most unbalanced unit in AW
+history. Taking one down cost-effectively requires the strategic know-how of a
+crack team of WW2 generals. To make matters worse, it pulverises ground
+vehicles and helicopters and withstands attacks like a solid block of Titanium,
+AND it can counterattack! What is wrong with this unit, and how can it be
+stopped?!?
+
+Well, let me calm down for one. The main method for disposing of these pesky
+units is to out-range them using Rockets and Battleships. At the very least,
+you can force it away from that vital piece of land it is trying to cover.
+Secondly, despite its awesome offensive prowess, its shells do what is known
+as piercing damage. It therefore has a few problems with Infantry (however, it
+will still hurt). Thirdly, with a mobility rating of four and Tire B movement,
+it is hopleless at reaching its destination in good time. Most importantly,
+however, Infantry deal good damage against Anti-Tanks. They may not take them
+down in 2 hits, but they deal damage comparable to what a Tank would cause.
+
+Takedown
+--------
+I've already mentioned this, but here's a recap. Anti-Tanks will eventually
+fall, but you need to hit it a lot before you can even cripple it. If you used
+vehicles against it, ensure that the counterattack damage doesn't exceed the
+cost of the Anti-Tank (ie 11000). Like the Mech Gun though, the best method is
+to out-range it with Rockets and Battleships. Battle Heli's won't work though,
+you're limited to Ship Planes and Bombers to KO it by air. Also remember to
+throw Infantry-type units at it, particularly Motorbikes.
+
+CPR
+---
+Extremely slow, rather costly, and also quite awesome, is the CO A-T unit.
+You'll once again have your meatshielding units in the CO Zone for additional
+longevity. You'll see Trak in this unit a lot.
+
+AI Posts
+--------
+Trak shows up a lot in one. Lili also boards them on rare occasions.
+
+
+
+12) Rockets
+
+Previously...
+-------------
+Cost: 15000
+Range: 5
+Vision: 1
+Type: Tire
+Fuel: 50
+Primary Weapon: Rockets (6)
+Attack Range: 3-5
+Secondary Weapon: None
+
+Currently...
+------------
+Armor: SL
+Cost: 15000
+Range: 5
+Vision: +2 (3)
+Type: Tire A
+Fuel: 50
+Primary Weapon: Rocket (-1, 5)
+Attack Range: 3-5
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - All Ground Units, All Naval Units
+3 - Motorbike
+2 - Bazooka, Recon, Flare, Anti-Air, Tank, Mech Gun, Anti Tank, Rockets,
+    Battleship, Battle Heli., Ship Plane
+1 - Mega Tank, Bomber
+
+Positives
+---------
+Ground indirect with largest range.
+Effective against ground and naval units.
+
+Negatives
+---------
+Extremely fragile.
+It moves on tires so it is far from mobile.
+It may need assistance in Fog of War spotting things to shoot at.
+Large blind spot.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| n |---
+Heli's| n |---
+Ships | Y |---
+Subs  | Y |---
+
+My Two Cents
+------------
+Comparing the Mech Gun to the Rocket unit is akin to comparing the scale model
+of the Enterprise to the real deal (not that it exists *ahem*). Everything is
+bigger with the exception of mobility. The actual mobility is unchanged, but
+Tire A type units lose colossal amounts of agility over any tiles with no
+roads/cities.
+
+The attack power goes up by about +2HP damage, the range goes up from 3 to 5,
+the blindspot goes up by 1. And the usefulness? Unmeasurable. A well-placed
+Rocket unit is the best unit in the game. Just protect it well, it has little
+tolerance to enemy attack.
+
+Takedown
+--------
+Out-ranging a Rocket unit is only possible with the Battleship, so you will
+have to use your head to take one down. The best counter to a Rocket is to
+prevent it from reaching that crucial choke in the first place. If it heads
+your way, go out of your way to hit it hard. If it does make its nest, your
+only chance is to rush it with a massive armada of heavy armour, or to throw
+air units at it. The Battle Heli can pay for itself in terms of the damage it
+can do to even a well-shielded Rocket unit.
+
+CPR
+---
+Not too useful actually. For one, it's damn expensive, damn slow, and the large
+blind-spot means that you need a CO Zone radius of at least 2 to defend it
+effectively. Really useful attack boosts at hand though.
+
+AI Posts
+--------
+Same as for the Anti-Tank, Trak and Lili.
+
+
+
+13) Missiles
+
+Previously...
+-------------
+Cost: 12000
+Range: 4
+Vision: 5
+Type: Tire
+Fuel: 50
+Primary Weapon: Missiles (6)
+Attack Range: 3-5
+Secondary Weapon: None
+
+Currently...
+------------
+Armor: SL
+Cost: 12000
+Range: 4
+Vision: 5
+Type: Tire A
+Fuel: 50
+Primary Weapon: Missile (-1, 5)
+Attack Range: 0,+1 (3-6)
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - All Air Units
+3 - Motorbike
+2 - Bazooka, Recon, Flare, Anti-Air, Tank, Mech Gun, Anti Tank, Rockets,
+    Battleship, Battle Heli., Ship Plane
+1 - Mega Tank, Bomber
+
+Positives
+---------
+Absolutely destroys aerial units.
+Extremely helpful in Fog of War due to massive vision range.
+
+Negatives
+---------
+Defenseless against ground units.
+Large blind-spot.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n |---
+Ground| n |---
+Aerial| Y |---
+Heli's| Y |---
+Ships | n |---
+Subs  | n |---
+
+My Two Cents
+------------
+Due to the redesigned Carrier, the Missile unit remains the sole (yet original)
+ranged aerial counter. From previous games, the range has increased to 6. Which
+is peculiar because Rockets have a range of 5, you would expect similar
+payloads to travel the same distance, surely?
+
+Anyways, this unit makes anything airborne cower. Choppers? Blown away.
+Fighters? Shot down. Bombers? Pulverised. Providing the unit isn't at Ace/Vet
+level or is lying in a CO zone, it'll get wiped out in a single attack. You can
+completely ruin an enemy airport by parking one of these nearby. The enemy
+isn't likely to build anything if it is instantly knocked out of the sky before
+it can even move! Watch out: somehow, in Fog Of War, Airports actually act as
+aerial unit hiding places! Usual indirect rules apply though: guard them well.
+
+Takedown
+--------
+Because it only hits air units, feel free to go in with the Tanks to hit it
+unless it has some serious backup. Despite the fact that it counters aircraft,
+Battle Heli's can camp just outside their range and go in for a power hit the
+next turn.
+
+CPR
+---
+Bad choice. Why would you want to anyway? It can KO all aerial units in one
+hit, remember?
+
+AI Posts
+--------
+Nobody. Easy to see why.
+
+
+
+14) Mobile Workshop (US Name: Rig)
+
+Previously...
+-------------
+Name: APC
+Cost: 5000
+Range: 6
+Vision: 1
+Type: Tracks
+Fuel: 70
+Primary Weapon: None
+Secondary Weapon: None
+
+Currently...
+------------
+Armor: L
+Cost: 5000
+Range: 6
+Vision: 1
+Type: Tank
+Fuel: 70
+Primary Weapon: None
+Secondary Weapon: None
+Materials: 1
+
+E-3-2-1
+-------
+E - N/A
+3 - Recon, Flare, Anti-Air
+2 - Bazooka, Tank, Mech Gun, Anti Tank, Rockets, Battleship, Battle Heli.,
+    Ship Plane
+1 - Heavy Tank, Mega Tank, Bomber
+
+Positives
+---------
+Can transport Infantry and Bazooka Units.
+Can re-supply adjacent units.
+Now capable of erecting Temporary Airports and Ports.
+
+Negatives
+---------
+Defenseless.
+
+Attacks Used
+------------
+Incapable of attack.
+
+My Two Cents
+------------
+We all know this as the APC from previous games. Compared to previous
+generations it would seem that nothing has changed. Oh, but it has! It can now
+create Temporary Airports on Plains and Temporary Ports on beaches! Easily
+worth the asking price all on its own! But just how useful are these
+structures?
+
+They generate no funds, so don't think of it as a cheap way of boosting money.
+They can't build anything, just service existing units. Their defensive cover
+is nothing compared to their true counterparts.
+
+However, they can reduce move cost for those annoying Tire A units. T-Ports
+allow ships to move deeper inland than usual, while keeping enemy ships (not
+landers) out. Be creative with where you put them and you can create a safe
+naval haven from enemy Submarines (Channel City comes to mind)!
+
+Most importantly, and most overlooked, they create hiding places for Fog of
+War! In some maps, placing one in a hiding-place-free chokepoint can make the
+enemys lives just a bit more annoying to bear. Another thing is that because
+the temporary structure is a property, it generates a field of vision in Fog of
+War like the other bases.
+
+Takedown
+--------
+Unless the enemy is totally reliant on these to help his war effort, don't
+prioritise them (unless it's bearing down on you with an Infantry aboard). The
+CPU never build these anyways.
+
+CPR
+---
+I don't need to say anything at all. Just. Don't. Bother.
+
+AI Posts
+--------
+None.
+
+
+
+B) NAVAL UNITS
+--------------
+
+Unless stated otherwise, naval units burn 1 unit of fuel per turn to stay
+afloat. If there is insufficient fuel, the unit sinks.
+
+Naval unit hiding places include Allied/Neutral (Temp.) Ports, Reefs and
+Sea Fog.
+
+
+01) Battleship
+
+Previously...
+-------------
+Cost: 28000
+Range: 5
+Vision: 2
+Type: Ship
+Fuel: 99
+Primary Weapon: Cannon (9)
+Attack Range: 2-6
+Secondary Weapon: None
+
+Currently...
+------------
+Cost: -3000 (25000)
+Range: 5
+Vision:
+Type:
+Fuel:
+Primary Weapon: Cannon (-3, 6)
+Attack Range: -1,-1 (3-5)
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - All Ground Units, All Naval Units
+3 - Mech Gun, Rockets, Battleship, Cruiser, Missile Boat
+2 - Submarine, Bomber, Ship Plane
+1 - N/A
+
+Positives
+---------
+Large attack power.
+Capable of moving AND attacking.
+Rather durable.
+
+Negatives
+---------
+Defenseless against submarines and aerial attacks.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| n |---
+Heli's| n |---
+Ships | Y |---
+Subs  | Y |---
+
+My Two Cents
+------------
+Ah, yes, the Battleship. Before it was an immobile super-Rocket unit. Now its
+been changed rather massively. Everybody talks about how its better than ever,
+but its also been nerfed and some people just don't see how, they just say
+'10 range FTW' or equivalent.
+
+Speaking of range, this is the sole indirect blessed with the ability to move
+and fire on the same turn. So, combine 5 mobility with a 3-5 range and you do
+indeed get the kind of attack range Nostradamus didn't see coming.
+
+Hold it though, don't get carried away. In comparision to before, its attack
+power seems to have fallen off the radar since AWDS. Not that it's low, its
+just unspectacular. In small seas, it can be difficult for the enhanced range
+to be utilised effectively. Also, be careful attacking units at the far reaches
+of the Battleships attack range, you may end up sailing into the line of fire
+if you are careless!
+
+Takedown
+--------
+This can prove tricky. Battleships are rarely seen without Cruiser escort. If
+you are lucky and the Cruiser is nowhere to be seen, feel free to hit it with
+air units and Submarines. If the Cruiser is in the area, this can be a fatal
+error. Your best bet is to prioritise taking the Cruiser with a Battleship of
+your own. Failing that, send 3-4 Missile Boats across and swarm the Battleship,
+or try to lure it into a trap.
+
+CPR
+---
+In. Cred. Ible. A CO Battleship gets the firepower it had in the previous
+games. Charging the CO meter in one of these is no problem at all. Just be
+careful. At 37500 it's extremely costly, and it also becomes a priority target
+for the enemy.
+
+AI Posts
+--------
+Trak and Sigismundo. Siggy never shows up on anything else. Watch for the
+moment he builds one, and don't hold back, or it'll become nigh invincible.
+
+
+
+02) Carrier
+
+Previously...
+-------------
+Cost: 30000
+Range: 5
+Vision: 4
+Type: Ship
+Fuel: 99
+Primary Weapon: Missiles (9)
+Attack Range: 3-8
+Secondary Weapon: None
+
+Currently...
+------------
+Cost: 28000
+Range: 5
+Vision: 4
+Type: Ship
+Fuel: 99
+Primary Weapon: None
+Secondary Weapon: Anti-Air Gun
+Materials: 4
+
+E-3-2-1
+-------
+E - Interceptor, Fighter, Trans. Heli.
+3 - Mech Gun, Rockets, Battleship, Cruiser, Missile Boat
+2 - Bomber, Ship Plane
+1 - Sub
+
+Positives
+---------
+Allows deployment of Ship Planes.
+When fully equipped, it becomes a deadly attack squadron.
+Capable of supplying AND repairing Aerial units.
+
+Negatives
+---------
+Hideously Expensive.
+Defenseless against Naval attackers.
+Very low attack power.
+EXTREMELY vulnerable to Submarines.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry|---| n
+Ground|---| n
+Aerial|---| Y
+Heli's|---| Y
+Ships |---| n
+Subs  |---| n
+
+My Two Cents
+------------
+The Carrier is completely different from the one in AWDS. Previously it was a
+naval Missile unit which happened to be able to haul aircraft around. Now it
+revolves completely around what actual Aircraft Carriers are supposed to do; be
+a naval base for an air force. Offensively, the Carrier has virtually nothing
+going for it on its own. It has an AA gun, but it does very low damage, and
+should be used only as a finishing attack or when there is no risk of a
+counterattack. Defensively, it is very fragile and is constantly in fear of
+being sunk in one hit by enemy Submarines.
+
+The main reason for building Carriers is the ability to manufacture up to four
+Ship Planes. These are covered later on, but to summarise, for an additional
+15000 credit, you gain a short range attack plane that can attack almost
+anything and score high amounts of damage. Even if you run out of materials for
+the Carrier, it can service any other aircraft such as Bombers and choppers,
+AND repair them as well! Deadly, but don't prioritise building one until your
+navy is set up first.
+
+Takedown
+--------
+Submarines can sink Carriers in one blast. Trying to take it down using other
+methods is dependant on if the Carrier has any Ship Planes. If not, flatten it.
+If it does, be extremely cautious: Ship Planes OHKO Missile Boats, cause pain
+to Battleships and even Cruisers can be Double-Teamed. Still, use Submarines.
+Anything else is a Plan-B.
+
+CPR
+---
+Zero. Why would you want to board a 42000 unit that can barely attack, unless
+your CO is Sigismundo or Stolos and you have more money than Bill Gates?
+
+AI Posts
+--------
+No-one. No comment needed.
+
+
+
+03) Submarine
+
+Previously...
+-------------
+Cost: 20000
+Range: 6
+Vision: 5
+Type: Ship
+Fuel: 70
+Primary Weapon: Torpedoes (6)
+Secondary Weapon: None
+
+Currently...
+------------
+Cost: 20000
+Range: 6
+Vision: 5
+Type: Ship
+Fuel: 60
+Primary Weapon: Torpedoes (6)
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - Battleship, Carrier, Submarine, Lander, Missile Boat
+3 - Missile Boat
+2 - Mech Gun, Rockets, Battleship, Submarine, Ship Plane
+1 - Cruiser, Bomber
+
+Positives
+---------
+Has the ability to submerge and become very difficult to spot and destroy.
+Extremely powerful against ships.
+Massive field of vision.
+
+Negatives
+---------
+Ambient fuel burn rate increases to 5 when submerged.
+Extremely vulnerable to attack when on the surface.
+Usually taken down in one hit by Cruisers.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n |---
+Ground| n |---
+Aerial| n |---
+Heli's| n |---
+Ships | Y |---
+Subs  | Y*|---
+
+* Can attack submerged Submarines.
+
+My Two Cents
+------------
+Other than the Battleship and maybe the Missile Boat, this is the primary
+anti-ship weapon for any navy. A MAJOR boost for the Submarine is that it is
+already submerged when built, meaning you can sneak them out of the port
+without the enemy being capable of killing it before it can even move! You get
+the option to rise and dive the Sub when moved. On the surface, it acts like a
+Missile Boat and is very much a priority target for the enemy (get it now or
+play hide and seek later), and underwater, the fuel burn rate goes up 500% but
+it is virtually impossible to see or hit! To even see one, you need to move a
+unit directly next to the Sub.
+
+Offensively, it remains rather unchanged. However, it has more trouble against
+Landers; you'll need at least an Ace/Vet boost for any chance of taking them
+out in one attack. It is still preyed upon by Cruisers, so stay well away! If
+there is one nearby and you can attack a key target, only do so if you have
+another unit to hit the Cruiser and/or you KO the target: If the target
+survives the hit, the Sub may as well have a 'Kick Me' sign sticking out of the
+water 'cos it's an easy KO for the Cruiser.
+
+Takedown
+--------
+Cruisers. I don't need to say much else other than trying to reveal hidden Subs
+can be a mission in itself. Subs can only wipe out Missile Boats and Carriers
+in one hit. If it hits anything else, it will likely be a sitting duck as the
+wounded vessel marks the Sub with a bullseye. If you are actively searching for
+a Sub, have 1-2 Missile Boats escort the Cruiser. Have them move randomly
+around the ocean and hope they crash or park alongside the Sub. And if the Sub
+takes out one of the Missile Boats, move the other one onto the other's grave
+and get'em!
+
+CPR
+---
+Interesting to say the least. 30K nets you enough attack power to kill Landers
+in one hit now. This doesn't mean that it is brilliant however. Even when
+submerged, a skilled human opponent can locate a CO Submarine by attacking
+nearby naval units. If it takes unusually low levels of damage, the CO post is
+nearby.
+
+AI Posts
+--------
+Nobody, surprisingly.
+
+
+
+04) Cruiser
+
+Previously...
+-------------
+Cost: 18000
+Range: 6
+Vision: 3
+Type: Ship
+Fuel: 99
+Primary Weapon: Missiles (9)
+Secondary Weapon: Anti-Air Gun
+
+Currently...
+------------
+Cost: 18000
+Range: 6
+Vision: +2 (5)
+Type: Ship
+Fuel: 99
+Primary Weapon: Anti-Ship Missile (9)
+Secondary Weapon: Anti-Air Gun
+
+E-3-2-1
+-------
+E - Battleship, Carrier, Submarine, Lander, Missile Boat, All Air Units
+3 - Missile Boat, Bomber, Ship Plane
+2 - Mech Gun, Rockets, Battleship
+1 - N/A
+
+Positives
+---------
+The only unit designed to take down Submarines.
+Extremely dangerous to aerial units.
+Particularly difficult to take down.
+Capable of servicing 2 Helicopters.
+Massive field of vision.
+
+Negatives
+---------
+Not much. Watch out for Battleships and Missile Boats.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n | n
+Ground| n | n
+Aerial| n | Y
+Heli's| n | Y
+Ships | Y | n
+Subs  | Y*| n
+
+* Can attack submerged Submarines.
+
+My Two Cents
+------------
+Previous title holder of 'Most Stubborn unit to kill' and still going strong.
+Cruisers have way too much good stuff considering its relative inexpensiveness.
+5 vision, 6 mobility, KOs aerial units and Subs in one hit, annoys everything
+else, what is wrong with this unit?
+
+And the answer is: nothing. It cannot enter the ground battle, but the Cruiser
+is still a ridiculously over-useful naval assault force. It now does more
+damage to any naval unit (except other Cruisers) since the last outing.
+Although they can be taken out, it is impossible to KO in one attack unless
+the attacker has some serious boosts.
+
+Oh, and did I mention it can transport 2 choppers in complete safety?
+
+Takedown
+--------
+The only time a Cruiser can be KO'd in one hit is with a highly boosted
+Battleship. Even without the boost, Battleships are the primary counter to
+enemy Cruisers. Cruisers can also be pinned down by Missile Boats; bring 2-3
+along for a good old game of range-dodging.
+
+CPR
+---
+The only core benefit of a CO Cruiser is the ability to sweep up Missile Boats
+like they didn't even exist, and to guarantee that damn Sub never rises again.
+
+AI Posts
+--------
+Nobody.
+
+
+
+05) Lander
+
+Previously...
+-------------
+Cost: 12000
+Range: 6
+Vision: 1
+Type: Lndr
+Fuel: 99
+Primary Weapon: None
+Secondary Weapon: None
+
+Currently...
+------------
+Cost: -2000 (10000)
+Range: 6
+Vision: 1
+Type: Trpt
+Fuel: 99
+Primary Weapon: None
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - N/A
+3 - Cruiser
+2 - Mech Gun, Rockets, Battleship, Submarine, Missile Boat, Ship Plane
+1 - Bomber
+
+Positives
+---------
+Can transport two ground units.
+Most durable transporter.
+
+Negatives
+---------
+Defenseless.
+
+Attacks Used
+------------
+Incapable of attack.
+
+My Two Cents
+------------
+Nothing has changed for this unit, except maybe the price and a slight up in
+defense. You need these to launch offensives in island maps. They can carry 2
+ground units and drop them off on ports and beaches. Very little to say since
+it is defenseless. Just watch out for Submarines.
+
+Takedown
+--------
+The best way to tackle these things is to block off any area of land where the
+enemy Lander is likely to dump its cargo, using anything you have. There isn't
+much point in using landing craft if there is nowhere to land in the first
+place! Actively taking them down in one hit requires a Bomber or a boosted
+Submarine/Battleship/Ship-Plane. Cruisers and Missile Boats dent them well too.
+When they land, Tanks and ranged attacks can weaken the Lander slowly but
+surely.
+
+CPR
+---
+Just don't bother.
+
+AI Posts
+--------
+Don't need to say, really.
+
+
+
+06) Missile Boat (US Name: Gunboat)
+
+An All New Unit.
+
+Currently...
+------------
+Cost: 6000
+Range: 7
+Vision: 2
+Type: Trpt
+Fuel: 99
+Primary Weapon: Anti-Ship Missile (1)
+Secondary Weapon:
+
+E-3-2-1
+-------
+E - All Naval Units
+3 - N/A
+2 - Tank, Heavy Tank, Mega Tank, Cruiser, Missile Boat, Battle Heli.
+1 - Mech Gun, Rockets, Battleship, Submarine, Bomber, Ship Plane
+
+Positives
+---------
+Can carry 1 Infantry unit.
+Fastest Naval unit.
+Weapon does solid damage to Naval units (the damage is similar to the cost of
+the Missile Boat).
+Particularly brilliant against Cruisers (fortunately).
+Inexpensive.
+
+Negatives
+---------
+Incredibly fragile.
+Has only ONE shot before a reload is required.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n |---
+Ground| n |---
+Aerial| n |---
+Heli's| n |---
+Ships | Y |---
+Subs  | Y |---
+
+My Two Cents
+------------
+A new addition to the naval frontier, and it has a bit of an identity crisis.
+The EU call it a Missile Boat but the Americans call it a Gunboat. In reality,
+it's a Missile Boat (look it up on Wikipedia if you don't believe me).
+
+Akin to Landers, they can carry ONE Infantry/Mech unit and transport them
+faster with their 7 mobility. Defensively, they are among the most fragile
+units around (even Tanks KO them in 2 hits). Offensively, they have only one
+shot of their Anti-Ship gun before a resupply is needed. The actual attack does
+approximately 4HP damage to ships and 6HP damage to transporters. That may not
+seem much, but get a lucky shot on a Carrier and the 6000 credit Missile Boat
+has paid for itself twice!
+
+On their own, however, they can only play range-dodging with enemy Cruisers.
+Have them travel in pairs (or even wolfpacks if you like overkill) and
+experiment with luring Battleships, blocking and smashing supply lines and
+causing general havoc. Just ensure they have no Submarines, and have fun!
+
+Takedown
+--------
+They are ridiculously fragile. They are felled in one hit by ranged attacks,
+Subs, Bombers and Ship Planes. If you can hit it, you can at least get a 2HKO.
+The problem is that good players have them travel in packs, making KO via
+Battleship/Cruiser a poor option.
+
+CPR
+---
+Fun to say the least. Fastest naval unit allows for maximum zone spreading
+across large oceans. You are still really vulnerable to attack, and the attack
+power boost has more trouble paying for itself now the price jumps to 9000.
+
+AI Posts
+--------
+Nobody.
+
+
+
+C) AERIAL UNITS
+---------------
+
+Helicopters burn 2 units of fuel per turn, and Planes burn 5 units of fuel per
+day to stay in the air. They crash and burn if they don't have enough fuel to
+stay aloft.
+
+New to AW:DC/DOR are Aerial unit hiding places. These include Allied/Neutral
+(Temp.) Airports.
+
+
+01) Interceptor (US Name: Fighter)
+
+Previously...
+-------------
+Name: Fighter
+Cost: 20000
+Range: 9
+Vision: 2
+Type: Plane
+Fuel: 99
+Primary Weapon: Missiles (9)
+Secondary Weapon: None
+
+Currently...
+------------
+Cost: 20000
+Range: 9
+Vision: +3 (5)
+Type: Air
+Fuel: 99
+Primary Weapon: Anti-Air Missiles (-3, 6)
+Secondary Weapon: None.
+
+E-3-2-1
+-------
+E - All Air Units
+3 - Carrier, Fighter, Ship Plane
+2 - Anti-Air, Interceptor
+1 - Missiles, Cruiser
+
+Positives
+---------
+Obliterates all other aerial units in 1-2 hits.
+Massive attack range.
+Improved vision range since AW:DS
+
+Negatives
+---------
+Vulnerable to units designed to counter Planes.
+Not as effective as it used to be (vs. Bombers).
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n |---
+Ground| n |---
+Aerial| Y |---
+Heli's| Y |---
+Ships | n |---
+Subs  | n |---
+
+My Two Cents
+------------
+If you see a squadron of air units approaching, you can pump out the Anti-Air
+units. If you force them to retreat, gun them down with these! Interceptors
+have unrivalled mobility in the skies! They can one-shot enemy choppers,
+cripple Bombers, flatten Fighters and cause general mayhem in the air war.
+They also have high vision, so they can be used as scouts in Fog of War
+(although at 20000 a piece, it's not too wise to venture TOO far into the enemy
+domain).
+
+Their attack power does seem to have faltered a bit since AWDS. Either that or
+the Bomber makers have gotten wise and fitted heavier armor, because Bombers
+can no longer be KOd in one hit by enemy Interceptors. Mind you, it will still
+hurt a lot.
+
+Takedown
+--------
+The most resiliant of air units alongside the Bomber. All air units can be
+swept away with Missiles and Cruisers. Outside of this rule of thumb, the
+strategies vary a lot. The Interceptor was designed for Aerial combat, so avoid
+this method unless you have no other option. Other Interceptor units deal about
+6HP damage, Fighters about 4HP. So use Aerials as a finisher. Other than that,
+use AAs to soften them up a bit.
+
+Another annoying thing you can do to air units (particularly Interceptors) is
+to surround them with nearby units. If the enemy was playing sneaky around the
+area covered by your countermeasures, you can hold the target in place long
+enough to get the AA in for a KO.
+
+CPR
+---
+Whoa. Guaranteed one-hit KOs on anything excluding other Interceptors and maybe
+Bombers. A very intimidating sight, but it's costly and a little restrictive on
+what it can hit. Best unit for moving that CO Zone about.
+
+AI Posts
+--------
+Quite a lot: O'Brian, Catleia, Zadia, Carter, Finn, Lili, Larissa, and Stolos.
+As I said before, a CO Interceptor can dominate the aerial assault, so only
+attempt to take to the air if you can guarantee that the enemy CO unit is going
+down in a blaze of anti-glory.
+
+
+
+02) Bomber
+
+Previously...
+-------------
+Cost: 22000
+Range: 7
+Vision: 2
+Type: Plane
+Fuel: 99
+Primary Weapon: Bombs (9)
+Secondary Weapon: None
+
+Currently...
+------------
+Cost: 20000
+Range: 7
+Vision: 2
+Type: Air
+Fuel: 99
+Primary Weapon: Bombs (-3, 6)
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - All Ground Units, All Naval Units
+3 - Carrier, Fighter
+2 - Anti-Air, Interceptor, Ship Plane
+1 - Missiles, Cruiser
+
+Positives
+---------
+Colossal attack power.
+Slightly more durable than before.
+
+Negatives
+---------
+Defenseless against Interceptors and Fighters.
+It seems to be less powerful than in AW:DS vs Anti-Airs.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| n |---
+Heli's| n |---
+Ships | Y |---
+Subs  | Y |---
+
+My Two Cents
+------------
+Known in the field as the true definition of 'overkill'. Bombers are your
+primary weapon against those decisive units such as Battleships and Anti-Tanks.
+Unless the enemy has some serious defenses the Bomber can send just about
+anything into a world of pain.
+
+Just be aware that this thing is helpless against Interceptors and even
+Fighters. Keep an eye out for Cruisers and AA units that travel in pairs. It
+may seem like an easy power-hit, but the next turn will make mincemeat out of
+20000 credit of flying death.
+
+Takedown
+--------
+Cruisers and Missiles work. Ensure the Bomber doesn't hit the Missiles first
+though. Interceptors and Fighters can outrun Bombers and make them run for
+cover. AA units will work, but the Bomber will not likely fall in one hit
+unless it's been weakened slightly (usually from hitting another AA). Use
+multiple AAs to deter them.
+
+CPR
+---
+AA units everywhere will have sleepless nights over these. Even a Lili CO
+Bomber can knock them out in one hit on (and up to) 1-star terrain. Any more
+boosts and it gets simply beyond overkill and more like genocide.
+
+AI Posts
+--------
+Nobody. Thank god.
+
+
+
+03) Fighter (US Name: Duster)
+
+An All New Unit.
+
+Currently...
+------------
+Cost: 13000
+Range: 8
+Vision: 4
+Type: Air
+Fuel: 99
+Primary Weapon: Machine Gun (9)
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Bomber, Fighter, Battle Heli., Trans. Heli.
+3 - Carrier
+2 - Anti-Air, Interceptor, Fighter, Ship Plane
+1 - Missiles, Cruiser
+
+Positives
+---------
+Capable of taking down helicopters.
+Relatively inexpensive.
+It CAN take down other planes, but you may need some backup.
+Safely annoys enemy foot-soldiers.
+Large field of vision.
+
+Negatives
+---------
+Can only attack vehicles for luck damage.
+Does limited damage to Interceptors.
+Defenseless against countermeasures.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| Y |---
+Heli's| Y |---
+Ships | n |---
+Subs  | n |---
+
+My Two Cents
+------------
+Call it an 'Entry-Level Interceptor' if you will. This unit also has
+conflicting names. Europeans get Fighter (the name for the Interceptor in
+previous games) where the Americans get the name 'Duster' (probably related to
+in-game stories about the unit being a converted cropduster). They actually
+resemble good old WW2 fighter planes, and that can only be a good thing, right?
+
+Well, sort of. Being propellor driven means it cannot outrun Interceptors
+(however 8 mobility isn't exactly slow). And having Machine Guns means that the
+damage it deals isn't too spectacular either. It will need to be at Ace/Vet
+level to KO choppers in one hit. It can also attack ground units, but only
+expect decent damage versus Infantry.
+
+Where this unit truly shines is in the hands of a specialist CO, where it
+becomes an aerial powerhouse for slightly less money than the Interceptor.
+
+Takedown
+--------
+Aside from the usual two, Interceptors have a chance for a takedown if it is at
+Ace/Vet level. AAs also work the same. If Fighters aren't hitting every chopper
+you have, they will most likely be taking pot-shots at your capturing Infantry,
+so escort them with an AA to give them an afterthought or such.
+
+CPR
+---
+The second half of the AWDC fanbases CO unit pairing. Very fast, guaranteed
+takedowns on choppers, can hold their ground against Interceptors even. Still
+can't hit armor for much though.
+
+AI Posts
+--------
+The same as for the Interceptor, namely loads of them. You'll be seeing these a
+lot in any aerial battle.
+
+
+
+04) Battle Helicopter (US Name: Battle Copter)
+
+Previously...
+-------------
+Name: B. Copter
+Cost: 9000
+Range: 6
+Vision: 3
+Type: Heli
+Fuel: 99
+Primary Weapon: Missiles (6)
+Secondary Weapon: Machine Gun
+
+Currently...
+------------
+Cost: 9000
+Range: 6
+Vision: 3
+Type: Heli
+Fuel: 99
+Primary Weapon: Air-to-Surface Missile (6)
+Secondary Weapon: Machine Gun
+
+E-3-2-1
+-------
+E - Infantry, Bazooka, Motorbike, Recon, Flare, Tank, Heavy Tank, Mega Tank,
+    Mech Gun, Rockets, Missiles, Mobile Workshop, Battleship, Carrier,
+    Submarine, Lander, Missile Boat, Battle Heli., Trans. Heli.
+3 - Mega Tank, Anti Tank, Carrier
+2 - Fighter, Battle Heli., Ship Plane
+1 - Anti-Air, Missiles, Interceptor
+
+Positives
+---------
+Effective against most ground units.
+Effective against other Helicopters.
+Seems much more powerful than in AW:DS.
+
+Negatives
+---------
+Seems to be a bit more vulnerable than before.
+Preyed upon by countermeasures.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| n | Y
+Ground| Y | Y
+Aerial| n | n
+Heli's| n | Y
+Ships | Y | n
+Subs  | Y | n
+
+My Two Cents
+------------
+Previously, the Battle Helicopter was a unit that took what I refer to as
+binary levels of damage: it would take no damage, or get swatted down like the
+swarm of annoying flies that they are. Forget flies, actually, they are more
+like wasps. Now, they seem to be much more vulnerable to damage from Machine
+Guns than before, resulting in a slightly lower effectiveness on the
+battlefield. What's more, the introduction of cheap Fighters and AA units make
+it even harder to use than before.
+
+Don't get put off though, because they can prove decisive. Their relative cheap
+cost means that in a deadlock, you can send them across the front lines on
+suicide missions. Nail a few key units and you can gain an opportunity to push
+though and cause a lot of damage. Considering their low cost, they work well up
+to Heavy Tanks, but Mega Tanks can gain the upper hand if they hit first. All
+in all, still useful, but more vulnerable.
+
+Takedown
+--------
+Lots of stuff can hit choppers. Any aerial countermeasure (minus Fighters)
+smash through these in one hit. Fighters cripple them, Mega Tanks dent them a
+bit. Be aware that the enemy may use these to annoy your key units. Use
+Missiles to cover likely attack spots the chopper may use. But be careful using
+Missiles as Battle Heli's can range-dodge these units and win.
+
+CPR
+---
+Potentially scary, but with cheaper AA units and low-cost Fighters, using one
+is no easy feat to achieve, to say the least. A Zadia Battle Heli. sweeps
+Infantry away and are capable of threatening even enemy Mega Tanks.
+
+AI Posts
+--------
+Nobody.
+
+
+
+05) Transport Helicopter (US Name: Transport Copter)
+
+Previously...
+-------------
+Name: T. Copter
+Cost: 5000
+Range: 6
+Vision: 2
+Type: Heli
+Fuel: 99
+Primary Weapon: None
+Secondary Weapon: None
+
+Currently...
+------------
+Cost: 5000
+Range: 6
+Vision: 2
+Type: Heli
+Fuel: 99
+Primary Weapon: None
+Secondary Weapon: None
+
+E-3-2-1
+-------
+E - N/A
+3 - Infantry, Bazooka, Motorbike, Recon, Flare, Tank, Heavy Tank, Mega Tank
+2 - Anti Tank, Carrier
+1 - Anti-Air, Missiles, Cruiser, Interceptor, Fighter, Ship Plane
+
+Positives
+---------
+Can transport Infantry across all terrain quickly.
+
+Negatives
+---------
+Defenseless.
+
+Attacks Used
+------------
+Incapable of attack.
+
+My Two Cents
+------------
+These haven't changed at all. Use them to transport Infantry/Mech units across
+mountains and seas to capture distance properties. They possess the armor of a
+sheath of silk and are liable to being shot down in one hit by nearly every
+aerial countermeasure. Be vigilant.
+
+Takedown
+--------
+LOADS OF STUFF. The same as the Battle Heli, but the Trans. Heli. is vulnerable
+to just about any unit that can attack it. Even Infantry stand a chance of a
+3HKO on one, so don't venture into an area even if it doesn't have any AAs.
+
+CPR
+---
+Why would you want to anyway?
+
+AI Posts
+--------
+No-one.
+
+
+
+06) Ship Plane (US Name: Seaplane)
+
+An All New Unit.
+
+Currently...
+------------
+Cost: 15000 (From Carriers)
+Range: 7
+Vision: 3
+Type: Air
+Fuel: 40
+Primary Weapon: Missiles (3)
+Secondary Weapon: None.
+
+E-3-2-1
+-------
+E - All Units
+3 - Carrier, Fighter
+2 - Anti-Air, Interceptor, Ship Plane
+1 - Missiles, Cruiser
+
+Positives
+---------
+They can attack any unit for solid damage.
+Relatively inexpensive.
+
+Negatives
+---------
+Extremely low fuel count.
+Can only be deployed from an expensive Carrier.
+Not particularly capable of causing collateral damage to units.
+Slowest plane.
+
+Attacks Used
+------------
+
+Target|P-W|S-W
+======+===+===
+Inftry| Y |---
+Ground| Y |---
+Aerial| Y |---
+Heli's| Y |---
+Ships | Y |---
+Subs  | Y |---
+
+My Two Cents
+------------
+The ace in the Carrier's hand. The Ship Plane is cheap, but to build one you
+need 28000 to get a Carrier. It takes three days and 43000 credit overall to
+let loose with even one Ship Plane. So, what is the point, really? This unit
+can attack anything and everything (well, exclude hidden Subs from the
+equation) and score solid damage (~6HP on average). Absolute genius.
+
+However, look at the fuel gauge and it really does say 40. This unit has
+extremely low range. Go 10 spaces from the Carrier and you risk it falling out
+of the sky. Also, it isn't exactly fast (well, for a plane).
+
+Takedown
+--------
+Ship Planes have notoriously low supply levels. If you can't knock it out and
+it is inland, surround it with units and wait for it to run out of fuel. Be
+careful, because the enemy will not let that happen and it is likely that they
+will send in a rescue force. Release it just as it is about to crash and burn
+so you can get back to helping the war effort.
+
+CPR
+---
+This would have been a good CO Post if it didn't have a fuel tank the size of a
+light bulb. As an attack force, then, a CO Ship Plane is extremely capable, but
+a little too short on range (unless you have Sigismundo in the cockpit and is
+trying to chain CO Powers. It's possible!).
+
+AI Posts
+--------
+No-one.
+
+
+
+=========
+3. THANKS
+=========
+
+Thanks for reading this FAQ, and I hope it has been of use to you guys. As of
+now, I have started countless FAQS, but this was the only one that hasn't been
+in a state of limbo. If you wish to contact me with any fixes, feel free. The
+address is...wait. I'm sure you know this, but swap the symbols with the
+appropriate substitutes. Anti-spambot thing, see.
+
+"wormmayheminc (a) hotmail (d) com"
+
+Yes, i've not used (at) or (dot). Something tells me that the bots can get
+around that now.
+
+Thanks anyways!
+
+(c)generiX 2008</p>

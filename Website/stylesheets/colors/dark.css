@@ -1,0 +1,56 @@
+
+body {
+	background-color: #26304f;
+}
+#header {
+	background-color:#32393d;
+	color:#357EC7;
+}
+
+.current h1{
+  color:#c0c0ca;
+}
+
+#nav {
+	background-color:#000000;
+	}
+	#nav td {
+		border:5px solid #181818;
+	}
+	#nav td:hover {
+		color:#CC0000;
+		background-color:#373737;
+	}
+	#nav td:active {
+		color:#CC0000;
+		background-color:#373737;
+	}
+
+	.inactive {
+		background-color:#2d2d2d;
+		color:#A31919;
+	}
+
+	.active {
+	color:#CC0000;
+	background-color:#373737;
+	}
+
+.current {
+	background-color:#2f2c4d;
+	color:#c0c0ca;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color:#c8c8b8;
+}
+
+#other{
+	background-color:#101235;
+	color:#c0c0ca;
+}
+
+#foot {
+	background-color:#152340;
+	color:grey;
+}
