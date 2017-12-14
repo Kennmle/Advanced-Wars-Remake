@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Path {
   //Fields
@@ -73,5 +74,22 @@ public class Path {
 
   public PathNode at(int i) {
     return path[i];
+  }
+
+  public void removeCycles() {
+    for(int i = 0; i<path.Count;i++) {
+      for(int j = i+1; j<path.Count;j++) {
+        if(j>=path.Count)
+          break;
+        if(path[i].getValue()==path[j].getValue())
+          path=path.GetRange(0,i).Concat(path.GetRange(j,path.Count-j)).ToList();
+      }
+      if(i>=path.Count)
+        break;
+    }
+    cost=0;
+    for(int i = 0; i<path.Count; i++) {
+      cost+=path[i].getWeight();
+    }
   }
 }

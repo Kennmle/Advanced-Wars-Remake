@@ -1,7 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System;
+using Priority_Queue;
 
+public class index : GenericPriorityQueueNode<int> {
+	public index(int id) {
+		i=id;
+	}
+	public int i;
+}
+//This struct is used in shortestPath()
+struct dijkstraNode{
+		public bool found;
+		public int dist;
+		public int previous; //index of previous node
+	}
 public class Movement{
 	//class is static, will be used by game.cs
 	private static List<Tile> moveList;
@@ -28,13 +41,15 @@ public class Movement{
 							Notes: break as soon as the node is found (1 pair),
 							we can't really afford athe full runtime (I think)
 					*/
-						Path newPath,oldPath;
+						Path shortPath;
 						for(int i = currentPath.length()-1; i>=0 ;++i) {
 							//Note that since t is in moveList, that currentPath will be set at some point
-							oldPath=currentPath.getUpTo(i);
-							newPath = shortestPath(currentPath.at(i).getValue(),t);
-							if(newPath.getCost()+oldPath.getCost()<=currentUnit.getMovement()) {
-								currentPath=oldPath.merge(newPath);
+							//If runtime is too slow, we can just run it on the starting node
+							shortPath=currentPath.getUpTo(i).merge(shortestPath(currentPath.at(i).getValue(),t,m));
+							shortPath.removeCycles();
+							// shortest path doesn't contain at(i)
+							if(shortPath.getCost()<=currentUnit.getMovement()) {
+								currentPath=shortPath;
 								i=-1; //equivalent to break;
 							}
 						}
@@ -44,9 +59,81 @@ public class Movement{
 			}
 	}
 
-	private static Path shortestPath(Tile a, Tile b) {
+	private static Path shortestPath(Tile a, Tile b, Map m) {
+		//If runtime is too high, use a hash table to store indices
+		dijkstraNode[] nodes= new dijkstraNode[moveList.Count];
+		for(int i = 0; i<moveList.Count; ++i) {
+			nodes[i].found=false;
+			nodes[i].dist=999;
+			nodes[i].previous=-1;
+		}
+		int start = moveList.IndexOf(a);
+		int end = moveList.IndexOf(b);
+		//<index,weight>
+		GenericPriorityQueue<index,int> queue = new GenericPriorityQueue<index,int>(moveList.Count);
+		nodes[start].dist=0;
+		queue.Enqueue(new index(start),0);
+		index tempi;
+		int x,y,r;
+		while(queue.Count!=0) {
+			tempi=queue.First;
+			queue.Remove(tempi);
+			nodes[tempi.i].found=true;
+			if(tempi.i==end)
+				break;
+			x=moveList[tempi.i].getX();
+			y=moveList[tempi.i].getY();
+			//ideally we shorten this; maybe do some sin/cos stuff in UserMath
+			//east
+			r=moveList.IndexOf(m.findTile(x+1,y));
+			if(!nodes[r].found&&moveList.Contains(m.findTile(x+1,y))) {
+				if(!nodes[r].found&&nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
+					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
+					nodes[r].previous=tempi.i;
+				}
+				if(!queue.Contains(new index(r)))
+					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
+				}
+			//north
+			r=moveList.IndexOf(m.findTile(x,y+1));
+			if(!nodes[r].found&&moveList.Contains(m.findTile(x,y+1))) {
+				if(nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
+					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
+					nodes[r].previous=tempi.i;
+				}
+				if(!queue.Contains(new index(r)))
+					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
+				}
+			//west
+			r=moveList.IndexOf(m.findTile(x,y+1));
+			if(!nodes[r].found&&moveList.Contains(m.findTile(x-1,y))) {
+				r=moveList.IndexOf(m.findTile(x-1,y));
+				if(nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
+					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
+					nodes[r].previous=tempi.i;
+				}
+				if(!queue.Contains(new index(r)))
+					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
+				}
+			//south
+			r=moveList.IndexOf(m.findTile(x,y+1));
+			if(!nodes[r].found&&moveList.Contains(m.findTile(x,y-1))) {
+				r=moveList.IndexOf(m.findTile(x,y-1));
+				if(nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
+					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
+					nodes[r].previous=tempi.i;
+				}
+				if(!queue.Contains(new index(r)))
+					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
+				}
+			}//end of while-loop
+			Path ret = new Path();
+			for(int i=end; i!=start;) {
+				ret.insertHead(moveList[i],movementCosts[moveList[i].getType()]);
+				i=nodes[i].previous;
+			}
 		//To impelement; high runtimes might result in reworking this algorithm
-		return null;
+		return ret;
 	}
 
 	public static void debugMoveList() {
@@ -58,6 +145,8 @@ public class Movement{
 		currentUnit = u;
 		addPossibleMoves(currentTile, u.getMovement(), currentMap, current);
 		UI.highlightMoves(moveList);
+		currentPath = new Path();
+		currentPath.insertHead(currentTile,0);
 	}
 
 	private static void addPossibleMoves(Tile currentTile, int moves, Map currentMap, Team current) {
