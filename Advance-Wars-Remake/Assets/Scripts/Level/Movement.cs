@@ -15,6 +15,7 @@ struct dijkstraNode{
 		public int dist;
 		public int previous; //index of previous node
 	}
+
 public class Movement{
 	//class is static, will be used by game.cs
 	private static List<Tile> moveList;
@@ -55,7 +56,12 @@ public class Movement{
 						}
 					}
 				}
-				//UI.updatePath(currentPath.getTiles());
+
+				List<int> toHighlight= new List<int>();
+				foreach(Tile x in currentPath.getTiles()) {
+					toHighlight.Add(moveList.IndexOf(x));
+				}
+				UI.highlightPath(toHighlight);
 			}
 	}
 

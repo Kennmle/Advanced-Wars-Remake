@@ -69,7 +69,7 @@ public class Game: MonoBehaviour {
 						if(aPress()) {
 						//only doing basic attack/movement stuff rn, will implement rigs, flares, etc. later on
 						//Checks what to bring up
-						UI.debug('A');
+						UI.debug('A',map); //TO BE REMOVED
 							if(selectedTile.containsUnit())	{
 								Unit u = selectedTile.getUnit();
 								if(team[turn].contains(u)) {//this is not combined with the other if-statement on purpose
@@ -84,7 +84,7 @@ public class Game: MonoBehaviour {
 								}
 						} //End of A-press
 						if(bPress()) {
-							UI.debug('B');
+							UI.debug('B', map);
 						}//End of B-press
 					break;
 					case(1):
