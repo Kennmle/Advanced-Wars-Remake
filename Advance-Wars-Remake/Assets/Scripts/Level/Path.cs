@@ -81,7 +81,7 @@ public class Path {
       for(int j = path.Count-1; j>i;j--)
           if(path[i].getValue()==path[j].getValue()) {
             int temp = path.Count;
-            path=path.GetRange(0,i).Concat(path.GetRange(j,path.Count-j)).ToList();
+            path=path.GetRange(0,i+1).Concat(path.GetRange(j+1,path.Count-j-1)).ToList();
             j-=temp-path.Count;
           }
           cost=0;

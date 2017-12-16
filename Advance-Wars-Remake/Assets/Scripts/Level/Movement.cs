@@ -53,7 +53,7 @@ public class Movement{
 						if such a path doesn't exist, try it for the 2nd most recent
 							(base will work since t is in movelist)
 							Notes: break as soon as the node is found (1 pair),
-							we can't really afford athe full runtime (I think)
+							we can't really afford the full runtime (I think)
 					*/
 						Path shortPath;
 						Path tempPath;
