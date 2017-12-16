@@ -13,7 +13,7 @@
 
 	<div id="nav"><table id="nav1">
 	<tr><td id="side1" onclick=tab(1) class="active">Home Page</td></tr>
-	<tr><td id="side2" onclick=tab(2) class="inactive">Tab 2</td></tr>
+	<tr><td id="side2" onclick=tab(2) class="inactive">Movement</td></tr>
 	<tr><td id="side3" onclick=tab(3) class="inactive">Battle</td></tr>
 	<tr><td id="side4" onclick=tab(4) class="inactive">Tab 4</td></tr>
 	<tr><td id="side5" onclick=tab(5) class="inactive">Tab 5</td></tr>
@@ -32,9 +32,37 @@
 		</div>
 
 		<div id="tab2" class="hidden">
-		<h1>Tab 2</h1>
-		<p>This is information displayed on tab 2</p>
-		<p>Hopefully I will see this</p>
+		<h1>Movement System</h1>
+		<p>
+			This page is primarily meant to catch you up on what I've been doing.
+			As of right now, the movement has 2 steps. When you first click on a unit,
+			it's available options are highlighted in blue. This is done using a recursive
+			function, adding adjacent tiles until the cost of the series of tiles is equal
+			to the unit's moves.
+		</p>
+		<p>
+			After the possible moves are displayed, a green path is created as you moves
+			your mouse around. This is fairly simple; we first start off the path with
+			the tile the unit is on. (From here, we only care if the selected tile is one of
+			the possible moves) If the newly selected tile is inside the path,
+			make the path a subpath (from the initial tile to the selected tile).
+			If the selected tile is adjacent to the most recently added tile, just
+			add it to the path. If the newly selected tile doesn't meet either of these
+			criteria, things get a bit more complicated.
+		</p>
+		<p>
+			If neither of these criteria are met (or if adding a new tile makes the cost too high),
+			then we try to find the shortest path to the selected tile, while retaining the current
+			path as best as we can. We iterate through each tile in our constructed path, from most recent to least.
+			For each of these tiles, we find the shortest path between it and the selected tile. If the
+			path found has too high of a cost, we try again with the preceding tile. Since the target (selected)
+			tile is one of our possible moves, there exists a path from our starting tile (the one
+			the unit is currently on) with a low enough cost.
+		</p>
+		<p>
+			By the way, I used a variation of Dijkstra's algorithm for the shortest path algorithm.
+			If you have anything that is faster, that'd be great (although I haven't experienced any issues with runtime so far).
+		</p>
 		</div>
 
 		<div id="tab3" class="hidden">
@@ -92,6 +120,7 @@
 		<table>
 			<tr><td onclick=switchColor("light") style="color: #000000; background-color:#DCDCA3"> Bright </td></tr>
 			<tr><td onclick=switchColor("dark") style="color: #c0c0ca; background-color:#101235"> Dark </td></tr>
+			<tr><td onclick=switchColor("forest") style="color: #110011; background-color:#8C7654"> Forest </td></tr>
 		</table>
 	</p>
 	</div>

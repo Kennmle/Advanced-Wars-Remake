@@ -41,8 +41,12 @@ h1{
 	color:#000000;
 }
 
-a:link, a:visited, a:hover, a:active {
-	color:blue;
+a:link, a:visited{
+	color:#0000FF;
+}
+
+a:hover, a:active {
+	color:#6666FF;
 }
 
 #other{
