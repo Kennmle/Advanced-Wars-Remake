@@ -15,7 +15,7 @@ public class Game: MonoBehaviour {
 	private readonly int GAMESTATEMAX = 2;
 
 	void Awake() {
-		team=GetComponentsInChildren<Team>();
+		team=new Team[2]; //no idea how this is gonna work
 		gameState=0;
 		map=GetComponentInChildren<Map>();
 		turn=0;
@@ -24,6 +24,10 @@ public class Game: MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		/* Testing movement */
+		Commander co = new TestCommander();
+		team[0]= new Team(co);
+		map.findTile(0,0).setUnit(team[0].generateTestTeam(GetComponentInChildren<TestUnit>().gameObject));
 
 	}
 
@@ -69,9 +73,10 @@ public class Game: MonoBehaviour {
 						if(aPress()) {
 						//only doing basic attack/movement stuff rn, will implement rigs, flares, etc. later on
 						//Checks what to bring up
-						UI.debug('A',map); //TO BE REMOVED
 							if(selectedTile.containsUnit())	{
 								Unit u = selectedTile.getUnit();
+								if(u==null)
+									Debug.Log("UnitNullException");
 								if(team[turn].contains(u)) {//this is not combined with the other if-statement on purpose
 									setGameState(1);
 									Movement.addPossibleMoves(selectedTile,u,map, team[turn]);
@@ -89,6 +94,10 @@ public class Game: MonoBehaviour {
 					break;
 					case(1):
 						Movement.updatePath(selectedTile,map);
+						if(aPress()) {//ignoring confirmation step for now
+							Movement.moveUnit();
+							gameState=0;
+						}
 					break;
 				}//End of switch statement
 

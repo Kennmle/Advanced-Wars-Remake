@@ -47,8 +47,10 @@ public class Map : MonoBehaviour {
 	{
 		if(x>=0&&x<this.getMapWidth()&&y>=0&&y<this.getMapHeight())
 			return tiles[x,y];
-		else
+		else {
+			//Debug.Log("No tile found at "+x+", "+y);
 			return null;
+		}
 	}
 
 	/** Uses 1d array of tiles to create the 2d array. Used in Start() **/

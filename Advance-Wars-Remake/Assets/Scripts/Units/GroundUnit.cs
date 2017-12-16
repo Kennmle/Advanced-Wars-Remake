@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GroundUnit : Unit {
+  /*
     public override void damage()
     {
         throw new NotImplementedException();
@@ -13,14 +14,15 @@ public class GroundUnit : Unit {
     {
         throw new NotImplementedException();
     }
-
+    */
     // Use this for initialization
     void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
+
 }

@@ -104,12 +104,14 @@ public class UI : MonoBehaviour {
 			case('A'):
 				Debug.Log((int)hlPos.x+" "+(int)hlPos.y);
 				//TESTING highlighters
+				/*
 				if((int)hlPos.x==1&&(int)hlPos.y==1)
 					testHighlightMoves(m);
 				if((int)hlPos.x==2&&(int)hlPos.y==2)
 					testHighlightPath(0);
 				if((int)hlPos.x==3&&(int)hlPos.y==3)
 					testHighlightPath(1);
+					*/
 				break;
 			case('B'):
 				Debug.Log("Press B when nothing selected");
@@ -133,6 +135,10 @@ public class UI : MonoBehaviour {
 				ret.Add(m.findTile(i,j));
 		dehighlightMoves();
 		highlightMoves(ret);
+	}
+
+	public static void print(string s) {
+			Debug.Log(s);
 	}
 
 	private static void testHighlightPath(int x) {

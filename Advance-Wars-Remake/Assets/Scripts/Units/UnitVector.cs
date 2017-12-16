@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class UnitVector : MonoBehaviour {
+public class UnitVector{
 	private Unit[] array;
 	private int size;
 	private int capacity;
 	private Unit commander;
 	static readonly int MAX_SIZE=50;
-	
+
 	public UnitVector() {
 		array=new Unit[10];
 		capacity=10;
@@ -35,7 +35,7 @@ public class UnitVector : MonoBehaviour {
 				array=temp;
 			}
 			array[size]=unit;
-			size++;	
+			size++;
 			return true;
 		}
 	}
@@ -49,46 +49,46 @@ public class UnitVector : MonoBehaviour {
 				return true;
 			}
 		}
-		
+
 		return false; //wasn't found
 	}
-	
+
 	public void setCommander(Unit unit) {
 		if(commander!=null)
-			Debug.Log("Overwritting commander!");
+			//Debug.Log("Overwritting commander!");
 		commander = unit;
 	}
-	
+
 	public Unit getCommander(Unit unit) {
 		return commander;
 	}
-	
+
 	public Unit getUnit(int x, int y) {
 		for(int i = 0; i<size; i++) {
 			//for now we use Unity's positions. We can later use ints defined in Unit
 			if((int)array[i].transform.position.x==x&&(int)array[i].transform.position.y==y)
 				return array[i];
 		}
-		
+
 		return null; //such a unit is not found
 	}
-	
+
 	public bool contains(Unit u) {
 		for(int i = 0; i<size; i++) {
 			if(array[i]=u)
 				return true;
 		}
-		
+
 		return false; //such a unit is not found
-		
+
 	}
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 }

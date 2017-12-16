@@ -2,35 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Team : MonoBehaviour {
+public class Team {
 	private UnitVector units;
 	//private List<Building> buildings;
 	private Commander co;
+	private int coBar;
 	private int funds; //Bank (income is handled in TeamManager)
-	
-	void Awake () {
+
+	public Team(Commander co) {
 		units = new UnitVector();
-		//addUnitsToList(units,GetComponentsInChildren<Unit>()); Used for preset units
-		//buildings = new List<Building>();
-		//addBuildingsToList(buildings,GetComponentsInChildren<Building>());
-		co=GetComponentInChildren<Commander>();
-		//Note: Work is currently halted. Do we want commander class to control all else (ie, function as a class to control the entire team)
-	}
-	
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		this.co=co;
+		coBar=0;
 	}
 	/*
 	public UnitVector getUnits() {
 		return units;
 	}
-	
+
 	public List<Building> getBuildings() {
 		return buildings;
 	}
@@ -42,7 +30,7 @@ public class Team : MonoBehaviour {
 	public bool contains(Building b) {
 		return buildings.Contains(b);
 	}
-	
+
 	public int getFunds()
 	{
 		return funds;
@@ -55,11 +43,11 @@ public class Team : MonoBehaviour {
 	public void decreaseFunds(int x) {
 		funds-=x;
 	}
-	
+
 	public bool canPurchase(int x) {
 		return funds>x;
 	}
-	*/
+
 	void addUnitsToList (UnitVector l1,Unit[] l2)
 	{
 		foreach(Unit o in l2)
@@ -67,7 +55,7 @@ public class Team : MonoBehaviour {
 			l1.add(o);
 		}
 	}
-	/*
+
 	void addBuildingsToList (List<Building> l1,Building[] l2)
 	{
 		foreach(Building o in l2)
@@ -76,4 +64,13 @@ public class Team : MonoBehaviour {
 		}
 	}
 	*/
+
+	public Unit generateTestTeam(GameObject x) {
+		GameObject temp = GameObject.Instantiate(x);
+		//TestUnit tempU = new TestUnit();
+		temp.AddComponent<TestUnit>();
+		temp.transform.position = new Vector3(0.5f,0.5f,-5f);
+		units.add(temp.GetComponent<TestUnit>());
+		return temp.GetComponent<TestUnit>();
+	}
 }

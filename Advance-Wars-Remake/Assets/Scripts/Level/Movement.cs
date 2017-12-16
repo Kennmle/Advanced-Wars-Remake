@@ -4,17 +4,30 @@ using System;
 using Priority_Queue;
 
 public class index : GenericPriorityQueueNode<int> {
+public int i;
+
 	public index(int id) {
 		i=id;
 	}
-	public int i;
+	/* Dont' remember why I added this in the first place, but I'll leave it for now
+	public static bool operator == (index b, index c) {
+     return  b==c;
+  }
+
+	//;
+	public static bool operator != (index b, index c) {
+     return  b!=c;
+  }
+	*/
 }
+
 //This struct is used in shortestPath()
 struct dijkstraNode{
 		public bool found;
 		public int dist;
 		public int previous; //index of previous node
-	}
+}
+
 
 public class Movement{
 	//class is static, will be used by game.cs
@@ -32,7 +45,7 @@ public class Movement{
 						inside=true;
 					}
 				if(!inside) {
-					if(UserMath.About(m.distance(t,currentPath.at(currentPath.length()-1).getValue()),1)&&currentPath.getCost()+movementCosts[t.getType()]<currentUnit.getMovement())
+					if(UserMath.About(m.distance(t,currentPath.at(currentPath.length()-1).getValue()),1)&&currentPath.getCost()+movementCosts[t.getType()]<=currentUnit.getMoves())
 						currentPath.insertTail(t,movementCosts[t.getType()]);
 					else {
 					/*
@@ -43,16 +56,22 @@ public class Movement{
 							we can't really afford athe full runtime (I think)
 					*/
 						Path shortPath;
-						for(int i = currentPath.length()-1; i>=0 ;++i) {
+						Path tempPath;
+						for(int i = currentPath.length()-1; i>=0 ;--i) {
 							//Note that since t is in moveList, that currentPath will be set at some point
 							//If runtime is too slow, we can just run it on the starting node
-							shortPath=currentPath.getUpTo(i).merge(shortestPath(currentPath.at(i).getValue(),t,m));
-							shortPath.removeCycles();
-							// shortest path doesn't contain at(i)
-							if(shortPath.getCost()<=currentUnit.getMovement()) {
-								currentPath=shortPath;
-								i=-1; //equivalent to break;
-							}
+							tempPath=shortestPath(currentPath.at(i).getValue(),t,m);
+								if(tempPath!=null) {
+									shortPath=currentPath.getUpTo(i).merge(tempPath);
+									shortPath.removeCycles();
+									// shortest path doesn't contain at(i)
+									if(shortPath.getCost()<=currentUnit.getMoves()) {
+										currentPath=shortPath;
+										i=-1; //equivalent to break;
+									}
+								}
+								else
+									UI.print("Shortest Path Error! Please let Kenneth know if you see this");
 						}
 					}
 				}
@@ -68,22 +87,31 @@ public class Movement{
 	private static Path shortestPath(Tile a, Tile b, Map m) {
 		//If runtime is too high, use a hash table to store indices
 		dijkstraNode[] nodes= new dijkstraNode[moveList.Count];
+		index[] indices = new index[moveList.Count];
 		for(int i = 0; i<moveList.Count; ++i) {
 			nodes[i].found=false;
 			nodes[i].dist=999;
 			nodes[i].previous=-1;
+			indices[i]=new index(i);
 		}
 		int start = moveList.IndexOf(a);
 		int end = moveList.IndexOf(b);
 		//<index,weight>
 		GenericPriorityQueue<index,int> queue = new GenericPriorityQueue<index,int>(moveList.Count);
 		nodes[start].dist=0;
-		queue.Enqueue(new index(start),0);
+		for(int i = 0; i<moveList.Count;i++) {
+			if(i==start)
+				queue.Enqueue(indices[i],0);
+			else
+				queue.Enqueue(indices[i],999);
+		}
+
 		index tempi;
 		int x,y,r;
+
 		while(queue.Count!=0) {
-			tempi=queue.First;
-			queue.Remove(tempi);
+		//for(int k = 0; k<queue.Count; k++) {
+			tempi=queue.Dequeue();
 			nodes[tempi.i].found=true;
 			if(tempi.i==end)
 				break;
@@ -92,83 +120,84 @@ public class Movement{
 			//ideally we shorten this; maybe do some sin/cos stuff in UserMath
 			//east
 			r=moveList.IndexOf(m.findTile(x+1,y));
-			if(!nodes[r].found&&moveList.Contains(m.findTile(x+1,y))) {
+			if(x<m.getMapWidth()-1&&r!=-1&&!nodes[r].found) {
 				if(!nodes[r].found&&nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
 					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
 					nodes[r].previous=tempi.i;
+					queue.UpdatePriority(indices[r],nodes[r].dist);
 				}
-				if(!queue.Contains(new index(r)))
-					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
-				}
+			}
 			//north
 			r=moveList.IndexOf(m.findTile(x,y+1));
-			if(!nodes[r].found&&moveList.Contains(m.findTile(x,y+1))) {
-				if(nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
+			if(r!=-1&&!nodes[r].found&&y<m.getMapHeight()-1) {
+				if(!nodes[r].found&&nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
 					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
 					nodes[r].previous=tempi.i;
+					queue.UpdatePriority(indices[r],nodes[r].dist);
 				}
-				if(!queue.Contains(new index(r)))
-					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
-				}
-			//west
-			r=moveList.IndexOf(m.findTile(x,y+1));
-			if(!nodes[r].found&&moveList.Contains(m.findTile(x-1,y))) {
-				r=moveList.IndexOf(m.findTile(x-1,y));
-				if(nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
-					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
-					nodes[r].previous=tempi.i;
-				}
-				if(!queue.Contains(new index(r)))
-					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
-				}
-			//south
-			r=moveList.IndexOf(m.findTile(x,y+1));
-			if(!nodes[r].found&&moveList.Contains(m.findTile(x,y-1))) {
-				r=moveList.IndexOf(m.findTile(x,y-1));
-				if(nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
-					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
-					nodes[r].previous=tempi.i;
-				}
-				if(!queue.Contains(new index(r)))
-					queue.Enqueue(new index(r),movementCosts[moveList[r].getType()]);
-				}
-			}//end of while-loop
-			Path ret = new Path();
-			for(int i=end; i!=start;) {
-				ret.insertHead(moveList[i],movementCosts[moveList[i].getType()]);
-				i=nodes[i].previous;
 			}
+			//west
+			r=moveList.IndexOf(m.findTile(x-1,y));
+			if(r!=-1&&!nodes[r].found&&x>0) {
+				if(!nodes[r].found&&nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
+					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
+					nodes[r].previous=tempi.i;
+					queue.UpdatePriority(indices[r],nodes[r].dist);
+				}
+			}
+			//south
+			r=moveList.IndexOf(m.findTile(x,y-1));
+			if(r!=-1&&!nodes[r].found&&y>0) {
+				if(!nodes[r].found&&nodes[r].dist>movementCosts[moveList[r].getType()]+nodes[tempi.i].dist) {
+					nodes[r].dist=movementCosts[moveList[r].getType()]+nodes[tempi.i].dist;
+					nodes[r].previous=tempi.i;
+					queue.UpdatePriority(indices[r],nodes[r].dist);
+				}
+			}
+		}//end of while-loop
+		Path ret = new Path();
+		if(nodes[end].previous==-1)
+			return null;
+		for(int i=end; i!=start;) {
+			ret.insertHead(moveList[i],movementCosts[moveList[i].getType()]);
+			i=nodes[i].previous;
+		}
 		//To impelement; high runtimes might result in reworking this algorithm
 		return ret;
-	}
-
-	public static void debugMoveList() {
-		//Debug.Log("Current list size is"+moveList.Count); //JFC why is this a public field? I know it is read-only, but still
 	}
 
 	public static void addPossibleMoves(Tile currentTile, Unit u, Map currentMap, Team current) {
 		setCurrentMovement(u);
 		currentUnit = u;
-		addPossibleMoves(currentTile, u.getMovement(), currentMap, current);
+		moveList= new List<Tile>();
+		addPossibleMoves(currentTile, u.getMoves(), currentMap, current);
 		UI.highlightMoves(moveList);
 		currentPath = new Path();
 		currentPath.insertHead(currentTile,0);
 	}
 
 	private static void addPossibleMoves(Tile currentTile, int moves, Map currentMap, Team current) {
+		if(!moveList.Contains(currentTile))
 		moveList.Add(currentTile);
-		if(currentTile.getX()>0&&movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()]<moves&&movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()]>0) //check if leftmost
+		if(currentTile.getX()>0&&movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()]<=moves&&movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()]>0) //check if leftmost
 			if(!currentMap.findTile(currentTile.getX()-1,currentTile.getY()).containsUnit()||!current.contains(currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getUnit()))
 				addPossibleMoves(currentMap.findTile(currentTile.getX()-1,currentTile.getY()),moves-movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()], currentMap, current);
-		if(currentTile.getX()<currentMap.getMapWidth()-1&&movementCosts[currentMap.findTile(currentTile.getX()+1,currentTile.getY()).getType()]<moves&&movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()]>0) //check rightmost
+		if(currentTile.getX()<currentMap.getMapWidth()-1&&movementCosts[currentMap.findTile(currentTile.getX()+1,currentTile.getY()).getType()]<=moves&&movementCosts[currentMap.findTile(currentTile.getX()+1,currentTile.getY()).getType()]>0) //check rightmost
 			if(currentMap.findTile(currentTile.getX()+1,currentTile.getY()).containsUnit()||!current.contains(currentMap.findTile(currentTile.getX()+1,currentTile.getY()).getUnit()))
 				addPossibleMoves(currentMap.findTile(currentTile.getX()+1,currentTile.getY()),moves-movementCosts[currentMap.findTile(currentTile.getX()+1,currentTile.getY()).getType()], currentMap, current);
-		if(currentTile.getY()>0&&movementCosts[currentMap.findTile(currentTile.getX(),currentTile.getY()-1).getType()]<moves&&movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()]>0) //check if bottom
+		if(currentTile.getY()>0&&movementCosts[currentMap.findTile(currentTile.getX(),currentTile.getY()-1).getType()]<=moves&&movementCosts[currentMap.findTile(currentTile.getY(),currentTile.getY()-1).getType()]>0) //check if bottom
 			if(currentMap.findTile(currentTile.getX(),currentTile.getY()-1).containsUnit()||!current.contains(currentMap.findTile(currentTile.getX(),currentTile.getY()-1).getUnit()))
 				addPossibleMoves(currentMap.findTile(currentTile.getX(),currentTile.getY()-1),moves-movementCosts[currentMap.findTile(currentTile.getX(),currentTile.getY()-1).getType()], currentMap, current);
-		if(currentTile.getY()<currentMap.getMapHeight()-1&&movementCosts[currentMap.findTile(currentTile.getX()+1,currentTile.getY()).getType()]<moves&&movementCosts[currentMap.findTile(currentTile.getX()-1,currentTile.getY()).getType()]>0) //check top
+		if(currentTile.getY()<currentMap.getMapHeight()-1&&movementCosts[currentMap.findTile(currentTile.getX(),currentTile.getY()+1).getType()]<=moves&&movementCosts[currentMap.findTile(currentTile.getX(),currentTile.getY()+1).getType()]>0) //check top
 			if(currentMap.findTile(currentTile.getX(),currentTile.getY()+1).containsUnit()||!current.contains(currentMap.findTile(currentTile.getX(),currentTile.getY()+1).getUnit()))
 				addPossibleMoves(currentMap.findTile(currentTile.getX(),currentTile.getY()+1),moves-movementCosts[currentMap.findTile(currentTile.getX(),currentTile.getY()+1).getType()], currentMap, current);
+	}
+
+	public static void moveUnit() {
+			List<Tile> pathToFollow = currentPath.getTiles();
+			dehighlight();
+			currentUnit.move(pathToFollow);
+			currentUnit.setFuel(currentUnit.getFuel()-currentPath.getCost());
 	}
 
 	public static void dehighlight() {

@@ -78,11 +78,11 @@ public class Path {
 
   public void removeCycles() {
     for(int i = 0; i<path.Count;i++)
-      for(int j = path.Count-i-1; j>0;j--)
-          if(path[i].getValue()==path[i+j].getValue()) {
-            int temp = path.GetRange(i+1,j).Count;
-            path=path.GetRange(0,i).Concat(path.GetRange(i+j,path.Count)).ToList();
-            j=temp;
+      for(int j = path.Count-1; j>i;j--)
+          if(path[i].getValue()==path[j].getValue()) {
+            int temp = path.Count;
+            path=path.GetRange(0,i).Concat(path.GetRange(j,path.Count-j)).ToList();
+            j-=temp-path.Count;
           }
           cost=0;
     for(int i = 0; i<path.Count; i++) {
