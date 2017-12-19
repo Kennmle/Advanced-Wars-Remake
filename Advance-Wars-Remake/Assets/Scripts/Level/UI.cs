@@ -14,6 +14,7 @@ public class UI : MonoBehaviour {
 	private static Material blue;
 	private static Material green;
 	private static Material red;
+	private static Map map;
 
 	void Awake() {
 		tileHighlighter=GameObject.FindWithTag("HighlighterCube");
@@ -31,6 +32,7 @@ public class UI : MonoBehaviour {
 		red.color = new Color(7f,0f,0f,.1f);
 
 	}
+
 	// Use this for initialization
 	void Start () {
 
@@ -40,8 +42,12 @@ public class UI : MonoBehaviour {
 	void Update () {
 
 	}
-
-	public static void updateHighlight(int width, int height) {
+	public static void setMap(Map m) {
+		map=m;
+	}
+	public static void updateHighlight() {
+		int width = map.getMapWidth();
+		int height = map.getMapHeight();
 		hlPos=tileHighlighter.transform.position;
 		mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition); //finds location of mouse
 		tempPos=hlPos;
@@ -70,8 +76,34 @@ public class UI : MonoBehaviour {
 
 		tileHighlighter.transform.position=tempPos;
 	}
+
+	public static Vector3 getMousePos() {
+		Vector3	tempPos = new Vector3(mousePos.x*1f,mousePos.y*1f,0f);
+
+		int width = map.getMapWidth();
+		int height = map.getMapHeight();
+
+		if(tempPos.x<0)
+			tempPos.x=0;
+		if(tempPos.x>=width)
+			tempPos.x=width-1;
+		if(tempPos.y<0)
+			tempPos.y=0;
+		if(tempPos.y>=height)
+			tempPos.y=height-1;
+		return tempPos;
+	}
+
 	public static void updateMousePos() {
 		lastMousePos=mousePos;
+	}
+
+	public static void hideHighlighter() {
+		tileHighlighter.transform.position +=new Vector3(0f,0f,50f);
+	}
+
+	public static void showHighlighter() {
+		tileHighlighter.transform.position -=new Vector3(0f,0f,50f);
 	}
 
 	public static void highlightMoves(List<Tile> moves) {

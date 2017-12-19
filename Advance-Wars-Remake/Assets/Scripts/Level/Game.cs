@@ -11,7 +11,13 @@ public class Game: MonoBehaviour {
 
 
 	private Tile selectedTile;
-	private int gameState; // 0=Normal, 1=Move/attack highlighter open, 2=menus
+	private int gameState;
+	/* 0=Normal (unit/building selection)
+	* 1=Move/attack highlighter open,
+	* 2=movement confirmation
+	* 3=building menu (buying units)
+	* 4=option menu
+	*/
 	private readonly int GAMESTATEMAX = 2;
 
 	void Awake() {
@@ -28,7 +34,7 @@ public class Game: MonoBehaviour {
 		Commander co = new TestCommander();
 		team[0]= new Team(co);
 		map.findTile(0,0).setUnit(team[0].generateTestTeam(GetComponentInChildren<TestUnit>().gameObject));
-
+		UI.setMap(map);
 	}
 
 	/** The following are shortcuts (keyboard) used for tile selection **/
@@ -61,8 +67,10 @@ public class Game: MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Maybe move these into switch statement later on?
-		UI.updateHighlight(map.getMapWidth(), map.getMapHeight());
-		selectedTile = map.findTile(UI.x(),UI.y());
+		if(gameState==0||gameState==1) {
+			UI.updateHighlight();
+			selectedTile = map.findTile(UI.x(),UI.y());
+		}
 		/* Game state represents what's going on in-game right now.
 		* 0 = nothing selected, default state
 		* 1 = unit selected, so displaying movement options and choosing move
@@ -95,8 +103,27 @@ public class Game: MonoBehaviour {
 					case(1):
 						Movement.updatePath(selectedTile,map);
 						if(aPress()) {//ignoring confirmation step for now
-							Movement.moveUnit();
-							gameState=0;
+							if(selectedTile==Movement.getEndTile()) {
+								Menu.movementReset();
+								Menu.movementSelect(true);//placeholder for now
+								Menu.switchToMovement();
+								gameState=2;
+							}
+						}
+					break;
+					case(2):
+						switch(Menu.getMovementState()) {
+							case(1):
+								Movement.moveUnit();
+								Menu.switchFromMovement();
+								gameState=0;
+								break;
+							case(2): //attack
+								Movement.moveUnit();
+								Menu.switchFromMovement();
+								gameState=0;
+								//Placeholder
+								break;
 						}
 					break;
 				}//End of switch statement
@@ -140,6 +167,4 @@ public class Game: MonoBehaviour {
 			return false;
 		}
 	}
-
-
 }

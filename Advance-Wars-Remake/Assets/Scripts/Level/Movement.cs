@@ -205,6 +205,10 @@ public class Movement{
 		UI.dehighlightMoves();
 	}
 
+	public static Tile getEndTile() {
+		return currentPath.getTiles()[currentPath.length()-1];
+	}
+
 	private static void setCurrentMovement(Unit u) {
 		movementCosts=new Dictionary<Tile.TileType, int>();
 		switch(u.getMovementType()) {

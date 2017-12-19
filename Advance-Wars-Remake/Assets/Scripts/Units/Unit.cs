@@ -145,7 +145,7 @@ public abstract class Unit : MonoBehaviour {
     public void move(List<Tile> path) {
       Vector3 offset;
       Vector3 startingPos;
-      float scalar=0.000005f;
+      float scalar=1f;
       for(int i = 1; i<path.Count; i++) {
         offset = new Vector3(path[i].gameObject.transform.position.x-path[i-1].gameObject.transform.position.x,path[i].gameObject.transform.position.y-path[i-1].gameObject.transform.position.y,0f);
         startingPos = new Vector3(path[i-1].gameObject.transform.position.x,path[i-1].gameObject.transform.position.y,this.gameObject.transform.position.z);
