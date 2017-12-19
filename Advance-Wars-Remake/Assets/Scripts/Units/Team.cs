@@ -69,7 +69,7 @@ public class Team {
 		GameObject temp = GameObject.Instantiate(x);
 		//TestUnit tempU = new TestUnit();
 		temp.AddComponent<TestUnit>();
-		temp.transform.position = new Vector3(0.5f,0.5f,-5f);
+		temp.transform.position += new Vector3(1f,1f,0f);
 		units.add(temp.GetComponent<TestUnit>());
 		return temp.GetComponent<TestUnit>();
 	}
