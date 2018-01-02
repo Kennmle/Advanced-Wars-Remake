@@ -22,7 +22,7 @@ public class BattleSystem : MonoBehaviour {
 		}
 	}
 	private void dictInit() {
-		Dictionary dict = new Dictionary<Type, int>();
+		Dictionary<Type, int> dict = new Dictionary<Type, int>();
 		dict.Add(typeof(Infantry),55);
 		dict.Add(typeof(Mech),45);
 		dict.Add(typeof(Bike),45);

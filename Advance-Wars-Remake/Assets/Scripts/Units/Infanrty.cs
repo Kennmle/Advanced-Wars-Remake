@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Infanrty : Unit {
+public class Infantry : Unit {
 
 	void Awake() {
 		health=100;

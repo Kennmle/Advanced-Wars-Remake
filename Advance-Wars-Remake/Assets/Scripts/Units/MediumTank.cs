@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AntiAir : Unit {
+public class MediumTank : Unit {
 	void Awake() {
 		health=100;
-		attack2 = false;
+		attack2 = true;
 		level = 0;
 		minRange = 1;
 		maxRange = 1;
-		movement=6;
-		ammo = 6;
-		cost= 7000;
-		fuel=60;
+		movement=5;
+		ammo = 5;
+		cost= 12000;
+		fuel=50;
 		direct=true;
 		hasActed=false;
 		mvmtType=MovementType.Tank;
 	}
-
 
 	// Use this for initialization
 	void Start () {
