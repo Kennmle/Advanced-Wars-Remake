@@ -4,18 +4,17 @@ using UnityEngine;
 using System;
 
 public abstract class Unit : MonoBehaviour {
-    protected int health; //go to hellth
-    protected int movement; //you best move your ass out of the way
-    protected int ammo; //I'll use this ammo to bust your cap
-    protected int cost; //This is gonna cost you pal
-    protected int attack1; //Attack on titan gives me cancer
+    protected int health;
+    protected int movement;
+    protected int ammo;
+    protected int cost;
+    protected int attack1;
     protected int attack2;
-    protected int defense; //Dee-fuck you
-    protected int fuel; //You have too much gas
-    protected int range; //y: (0, 6) U (7, 90]
-    protected bool direct; //Defines whether the unit is a direct or indirect attacker
-    protected bool hasActed; //reflects whether the unit has acted (movcd and/or attacked+) this turn. To be reset each turn
-	//WHO THE FUCK????
+    protected int defense;
+    protected int fuel;
+    protected int range;
+    protected bool direct;
+    protected bool hasActed;
 
 	protected MovementType mvmtType;
 	protected WeaponType atkType;
@@ -165,7 +164,7 @@ public abstract class Unit : MonoBehaviour {
 
 	public enum MovementType {
 		Infantry, Mech, TireA, TireB, Tank,
-		Air, Ship, Transport,
+		Air, Ship, Transport, Heli,
 	}
 
 	public enum WeaponType {
