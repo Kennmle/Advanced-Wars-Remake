@@ -32,12 +32,10 @@ public class Menu : MonoBehaviour {
 
   public static void movementWait() {
     movementChoice=1;
-    Debug.Log("1");
   }
 
   public static void movementAttack() {
     movementChoice=2;
-    Debug.Log("2");
   }
 
   public static void movementSelect(bool attack, string other) {

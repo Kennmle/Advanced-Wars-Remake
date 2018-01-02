@@ -18,7 +18,6 @@ public class Game: MonoBehaviour {
 	* 3=building menu (buying units)
 	* 4=option menu
 	*/
-	private readonly int GAMESTATEMAX = 2;
 
 	void Awake() {
 		team=new Team[2]; //no idea how this is gonna work
@@ -152,19 +151,11 @@ public class Game: MonoBehaviour {
 		//team[turn].addFunds(income*team[turn].getBuildings().Count);
 	}
 
-	int getGameState()
-	{
+	int getGameState()	{
 		return gameState;
 	}
 
-	bool setGameState(int x)
-	{
-		if(0<=x&&x<=GAMESTATEMAX) {
-			gameState=x;
-			return true;
-		}
-		else {
-			return false;
-		}
+	void setGameState(int x)	{
+		gameState=x;
 	}
 }
