@@ -77,15 +77,6 @@ public abstract class Unit : MonoBehaviour {
     {
         return fuel;
     }
-    public void setRange(int x)
-    {
-        range = x;
-    }
-    public int getRange()
-    {
-        return range;
-    }
-
 	public bool acted()
 	{
 		return hasActed;

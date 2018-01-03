@@ -85,7 +85,7 @@ public class BattleSystem : MonoBehaviour {
 		dict.Add(typeof(Cruiser),0);
 		dict.Add(typeof(GunBoat),0);
 		dict.Add(typeof(Lander),0);
-		dict.Add(typeof(Figher),0);
+		dict.Add(typeof(Fighter),0);
 		dict.Add(typeof(Bomber),0);
 		dict.Add(typeof(Duster),0);
 		dict.Add(typeof(BCopter),12);

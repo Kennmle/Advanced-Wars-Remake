@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fighter : Unit {
+public class SeaPlane : Unit {
 	void Awake() {
 		health=100;
 		attack2 = false;
 		level = 0;
 		minRange = 1;
 		maxRange = 1;
-		movement=9;
-		ammo = 6;
-		cost= 20000;
-		fuel=99;
+		movement=7;
+		ammo = 3;
+		cost= 15000;
+		fuel=40;
 		direct=true;
 		hasActed=false;
 		mvmtType=MovementType.Air;
 	}
-
 	// Use this for initialization
 	void Start () {
 
