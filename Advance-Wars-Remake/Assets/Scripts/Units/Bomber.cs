@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Artillery : Unit {
+public class Bomber : Unit {
 	void Awake() {
 		health=100;
 		attack2 = false;
 		level = 0;
-		minRange = 2;
-		maxRange = 3;
-		movement=5;
+		minRange = 1;
+		maxRange = 1;
+		movement=7;
 		ammo = 6;
-		cost= 6000;
-		fuel=50;
-		direct=false;
+		cost= 20000;
+		fuel=99;
+		direct=true;
 		hasActed=false;
-		mvmtType=MovementType.Tank;
+		mvmtType=MovementType.Air;
 	}
-
 	// Use this for initialization
 	void Start () {
 

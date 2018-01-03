@@ -16,9 +16,22 @@ public class BattleSystem : MonoBehaviour {
 	void Update () {
 	}
 
-	public static void attackable(Unit unit1, Unit unit2) {
-		if (unit1.GetType().Name == "TestUnit") {
-			unit1.getFuel();
+	public static bool attackable(Unit unit1, Unit unit2) {
+		if (battle[unit1.GetType()][unit2.GetType()] == 0) {
+			return false;
+		}
+		else if (unit1.GetType() == typeof(Infantry) ||
+		unit1.GetType() == typeof(Mech) || unit1.GetType() == typeof(Bike) ||
+		unit1.GetType() == typeof(Recon) || unit1.GetType() == typeof(Flare) ||
+		unit1.GetType() == typeof(Tank) || unit1.GetType() == typeof(MediumTank) ||
+		unit1.GetType() == typeof(WarTank) || unit1.GetType() == typeof(Carrier)) {
+			return true;
+		}
+		else if(unit1.getAmmo() == 0) {
+			return false;
+		}
+		else {
+			return true;
 		}
 	}
 	private void dictInit() {

@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Artillery : Unit {
+public class AntiTank : Unit {
 	void Awake() {
 		health=100;
 		attack2 = false;
 		level = 0;
-		minRange = 2;
+		minRange = 1;
 		maxRange = 3;
-		movement=5;
+		movement=4;
 		ammo = 6;
-		cost= 6000;
+		cost= 11000;
 		fuel=50;
 		direct=false;
 		hasActed=false;
-		mvmtType=MovementType.Tank;
+		mvmtType=MovementType.TireB;
 	}
 
 	// Use this for initialization

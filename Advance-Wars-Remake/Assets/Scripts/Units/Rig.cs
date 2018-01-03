@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Artillery : Unit {
+public class Rig : Unit {
+
 	void Awake() {
 		health=100;
-		attack2 = false;
+		attack2 =false;
 		level = 0;
-		minRange = 2;
-		maxRange = 3;
-		movement=5;
-		ammo = 6;
-		cost= 6000;
+		minRange = 1;
+		maxRange = 1;
+		movement=6;
+		ammo = 0;
+		cost= 5000;
 		fuel=50;
-		direct=false;
+		direct=true;
 		hasActed=false;
 		mvmtType=MovementType.Tank;
 	}
