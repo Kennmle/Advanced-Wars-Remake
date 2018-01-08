@@ -14,7 +14,7 @@ public class Team {
 		this.co=co;
 		coBar=0;
 	}
-	/*
+	
 	public UnitVector getUnits() {
 		return units;
 	}
@@ -22,11 +22,11 @@ public class Team {
 	public List<Building> getBuildings() {
 		return buildings;
 	}
-	*/
+
 	public bool contains(Unit u) {
 		return units.contains(u);
 	}
-	/*
+
 	public bool contains(Building b) {
 		return buildings.Contains(b);
 	}
@@ -35,11 +35,11 @@ public class Team {
 	{
 		return funds;
 	}
-	*/
+
 	public void addFunds(int x) {
 		funds+=x;
 	}
-	/*
+
 	public void decreaseFunds(int x) {
 		funds-=x;
 	}
@@ -63,7 +63,7 @@ public class Team {
 			l1.Add(o);
 		}
 	}
-	*/
+
 
 	public Unit generateTestTeam(GameObject x) {
 		GameObject temp = GameObject.Instantiate(x);

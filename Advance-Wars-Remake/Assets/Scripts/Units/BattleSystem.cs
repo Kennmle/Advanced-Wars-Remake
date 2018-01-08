@@ -33,6 +33,31 @@ public class BattleSystem : MonoBehaviour {
 		else {
 			return true;
 		}
+		int level = 0;
+		if (unit1.getLevel() == 1) {
+			level = 5;
+		}
+		else if (unit1.getLevel() == 2) {
+			level = 10;
+		}
+		else if (unit1.getLevel() == 3) {
+			level = 20;
+		}
+    int co = 0;
+		if (UserMath.inRange(team[turn].getUnits.getCommander(), unit1, team[turn].getCo().getCoZone())) {
+			co = 10;
+		}
+		int attackStat = 100 + level +
+		battle[unit1.GetType()][unit2.GetType()] * (unit1.getHealth()/10) * attackStat/defenseStat;
+	}
+
+	public static Team getUnitTeam(Unit unit, Team[] team) {
+		for (int i = 0; i < team.length - 1; i++) {
+			if (team[i].getUnits.contains(unit)) {
+				return team[i];
+			}
+		}
+		return null;
 	}
 	private void dictInit() {
 		Dictionary<Type, int> dict = new Dictionary<Type, int>();

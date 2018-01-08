@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 
 public abstract class Unit : MonoBehaviour {
+    protected int team;
     protected int health;
     protected int level;
     protected int movement;
@@ -76,6 +77,14 @@ public abstract class Unit : MonoBehaviour {
     public int getFuel()
     {
         return fuel;
+    }
+    public void setLevel(int x)
+    {
+        level = x;
+    }
+    public int getLevel()
+    {
+        return level;
     }
 	public bool acted()
 	{
